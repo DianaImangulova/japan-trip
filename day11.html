@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 11 - Arrival in Tokyo & Shinjuku | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/shinjuku-neon-lights.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 11</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">December 3</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Back to Tokyo
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Shinjuku Arrival & City Lights</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🚄 Shinkansen to Tokyo</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏙️ Shinjuku District</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-11-overview">
+      <h2>Highlights</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ef4444;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#shinkansen-section" style="color: #ef4444; text-decoration: none;">Shinkansen Journey to Tokyo</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">High-speed bullet train from Osaka to Tokyo Station</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#shinjuku-section" style="color: #f59e0b; text-decoration: none;">Shinjuku City</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Walk through Tokyo's busiest district and neon-lit streets</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#omoide-section" style="color: #10b981; text-decoration: none;">Omoide Yokocho (Memory Lane)</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Traditional yakitori alleys and tiny bars from post-war Tokyo</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #ef4444, #f59e0b);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shinkansen Container -->
+  <div class="container">
+    <section id="shinkansen-section">
+      <h2>Shinkansen Journey to Tokyo</h2>
+      <br><br>
+      <img src="assets/shinkansen-bullet-train.jpg" alt="Shinkansen bullet train" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>The Shinkansen</strong> is Japan's world-famous bullet train system, connecting Osaka to Tokyo in just 2.5-3 hours. This engineering marvel travels at speeds up to 320 km/h while maintaining punctuality that's measured in seconds, not minutes.
+        </p>
+        
+        <p class="highlight-intro">
+          Your journey on the Tokaido Shinkansen offers stunning views of Mount Fuji (weather permitting), traditional Japanese countryside, and modern cities. It's not just transportation - it's an iconic Japanese experience.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🚄 Shinkansen Information</h3>
+        <ul class="location-info">
+          <li>📍 Departure: Shin-Osaka Station</li>
+          <li>📍 Arrival: Tokyo Station</li>
+          <li>⏱️ Journey time: 2 hours 30 minutes - 3 hours</li>
+          <li>🎫 Reserved seat recommended</li>
+          <li>🏔️ Best views: Right side for Mount Fuji (clear days)</li>
+        </ul>
+      </div>
+
+      <!-- Shinkansen Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShinkansenFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(239,68,68,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Bullet Train Engineering</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shinkansen-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shinkansen-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⚡</span>
+                  Incredible Speed & Precision
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The Tokaido Shinkansen averages just 0.9 minutes late per year. With speeds reaching 320 km/h, the journey feels smooth and quiet thanks to advanced engineering and dedicated tracks.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏔️</span>
+                  Mount Fuji Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  On clear days, Mount Fuji appears majestically on the right side of the train between Kozu and Atami stations. The best viewing window is around 40-45 minutes after leaving Shin-Osaka.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍱</span>
+                  Ekiben Culture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Try ekiben (train station bento boxes) - beautifully crafted meals perfect for the journey. Each region has unique specialties, making dining part of the travel experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  
+  <!-- Shinjuku Exploration Container -->
+  <div class="container">
+    <section id="shinjuku-section">
+      <h2>Shinjuku City Exploration</h2>
+      <br><br>
+      <img src="assets/shinjuku-crossing-night.jpg" alt="Shinjuku at night" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Shinjuku</strong> is Tokyo's bustling commercial and administrative center, known for its towering skyscrapers, massive train station, and vibrant nightlife. This district perfectly embodies modern Tokyo's energy and scale.
+        </p>
+        
+        <p class="highlight-intro">
+          From the observation decks of government buildings to the neon-lit streets of Kabukicho, Shinjuku offers endless discovery. The area seamlessly blends business districts, shopping centers, parks, and entertainment venues.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🌃 Shinjuku Highlights</h3>
+        <ul class="location-info">
+          <li>🏢 Tokyo Metropolitan Government Building (free observation decks)</li>
+          <li>🛍️ Takashimaya Times Square (shopping and restaurants)</li>
+          <li>🌸 Shinjuku Gyoen National Garden (peaceful escape)</li>
+          <li>🎤 Golden Gai (tiny bars and nightlife)</li>
+          <li>📸 Shinjuku Crossing (one of world's busiest intersections)</li>
+        </ul>
+      </div>
+
+      <!-- Shinjuku Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShinjukuFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Urban Tokyo Experience</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shinjuku-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shinjuku-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🚉</span>
+                  World's Busiest Station
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Shinjuku Station handles over 3.6 million passengers daily, making it the busiest train station in the world. The station connects 12 train lines and has over 200 exits!
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏙️</span>
+                  Skyscraper Forest
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The area features some of Tokyo's tallest buildings, including the Tokyo Metropolitan Government Building with free observation decks offering panoramic city views up to Mount Fuji.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎬</span>
+                  Pop Culture Hub
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Shinjuku appears in countless movies, anime, and video games as the archetypal representation of modern Tokyo. The neon-lit streets embody the cyberpunk aesthetic Japan is famous for.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Omoide Yokocho Container -->
+  <div class="container">
+    <section id="omoide-section">
+      <h2>Omoide Yokocho (Memory Lane)</h2>
+      <br><br>
+      <img src="assets/omoide-yokocho-alley.jpg" alt="Omoide Yokocho traditional alley" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Omoide Yokocho</strong>, literally "Memory Lane," is a narrow alley filled with tiny yakitori stands and bars that recreate the atmosphere of post-war Tokyo. This historic area offers an authentic glimpse into old Japan amidst modern Shinjuku.
+        </p>
+        
+        <p class="highlight-intro">
+          The narrow passages are lined with traditional wooden stalls, many seating only 4-5 people. The intimate setting encourages conversation with locals and fellow travelers while enjoying grilled chicken skewers and beer.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🍜 Memory Lane Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Near Shinjuku Station West Exit</li>
+          <li>🕐 Hours: Most stalls open 5:00 PM - late night</li>
+          <li>🍗 Specialty: Yakitori (grilled chicken skewers)</li>
+          <li>💰 Budget: ¥2,000-4,000 per person</li>
+          <li>🍺 Atmosphere: Traditional, intimate, nostalgic</li>
+        </ul>
+      </div>
+
+      <!-- Omoide Yokocho Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleOmoideFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Traditional Tokyo Culture</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="omoide-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="omoide-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏮</span>
+                  Post-War Heritage
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  These alleys date back to the 1940s when small food stalls served black market goods to post-war Tokyo. Many current establishments have been family-run for generations.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍗</span>
+                  Yakitori Culture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Each small stall specializes in perfectly grilled chicken parts - from standard breast and thigh to more adventurous options like heart, liver, and cartilage. It's an art form requiring years to master.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🤝</span>
+                  Social Experience
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The tiny spaces naturally bring people together. Don't be surprised if locals start conversations - these alleys represent traditional Japanese hospitality and social drinking culture.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Book Shinkansen seats in advance for comfort and Mt. Fuji views</li>
+          <li>Hotel check-in usually after 3:00 PM - store luggage if arriving early</li>
+          <li>Download Google Translate for restaurant menus in Kabukicho</li>
+          <li>Shinjuku Station is huge - allow extra time for navigation</li>
+          <li>Try yakitori at Omoide Yokocho but respect the intimate atmosphere</li>
+          <li>Keep your JR Pass handy for easy train access around Tokyo</li>
+          <li>Explore both day and night - Shinjuku transforms after dark</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day10.html">⬅ Back to Day 10</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day12.html">Day 12 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const items = document.querySelectorAll('.checklist-item');
+      const checkedItems = document.querySelectorAll('.checklist-item.checked');
+      const progress = (checkedItems.length / items.length) * 100;
+      
+      document.getElementById('progress-bar').style.width = progress + '%';
+      document.getElementById('progress-text').textContent = `${checkedItems.length} of ${items.length} completed`;
+    }
+
+    // Facts Toggle Functions
+    function toggleShinkansenFacts() {
+      const content = document.getElementById('shinkansen-facts-content');
+      const arrow = document.getElementById('shinkansen-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleHotelFacts() {
+      const content = document.getElementById('hotel-facts-content');
+      const arrow = document.getElementById('hotel-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleShinjukuFacts() {
+      const content = document.getElementById('shinjuku-facts-content');
+      const arrow = document.getElementById('shinjuku-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleOmoideFacts() {
+      const content = document.getElementById('omoide-facts-content');
+      const arrow = document.getElementById('omoide-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+
+</body>
+</html>

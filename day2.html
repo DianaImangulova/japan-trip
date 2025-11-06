@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 2 - Traditional Tokyo | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/tokyo-traditional.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 2</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 24</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Traditional Tokyo
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Ancient Temples & Imperial Gardens</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">📍 Asakusa & Central Tokyo</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-2-overview">
+      <h2>Today's Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist - now inside Today's Journey -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid var(--accent);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">⛩️ Visit <a href="#sensoji-section" style="color: var(--accent); text-decoration: none;">Senso-ji Temple</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid var(--forest);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">🏪 Explore <a href="#nakamise-section" style="color: var(--forest); text-decoration: none;">Nakamise Shopping Street</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">🗼 Experience <a href="#skytree-section" style="color: #3b82f6; text-decoration: none;">Tokyo Skytree</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ec4899;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">🌸 Discover <a href="#ueno-section" style="color: #ec4899; text-decoration: none;">Ueno District</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">🏯 Stroll through <a href="#imperial-section" style="color: #10b981; text-decoration: none;">Imperial Palace Gardens</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid var(--gold);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">💎 Elegant dinner in <a href="#ginza-section" style="color: var(--gold); text-decoration: none;">Ginza District</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 6 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, var(--accent), var(--gold));
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Senso-ji Temple Container -->
+  <div class="container">
+    <section id="sensoji-section">
+      <h2>Senso-ji Temple</h2>
+      <br><br>
+      <img src="assets/sensoji-temple.jpg" alt="Senso-ji Temple, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Senso-ji Temple</strong> is Tokyo's oldest Buddhist temple, founded in 628 AD. Located in Asakusa, it's dedicated to Kannon (goddess of mercy) and remains one of Tokyo's most significant spiritual sites.
+        </p>
+        <p class="highlight-intro">
+          The temple's iconic Kaminarimon (Thunder Gate) with its massive red lantern welcomes millions of visitors annually. Inside, you'll experience traditional Buddhist rituals and the sacred atmosphere that has endured for nearly 1,400 years.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 2-3-1 Asakusa, Taito-ku, Tokyo</li>
+          <li>🕐 Opening hours: 6:00 AM - 5:00 PM (temple grounds always open)</li>
+          <li>💰 Admission: Free</li>
+          <li>🚇 Station: Asakusa Station (Ginza Line, Asakusa Line, Tobu Line)</li>
+        </ul>
+      </div>
+
+      <!-- Enhanced Interesting Facts Section with Dropdown -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef7e0 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleSensojiFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent,#d97706) 0%, #c2410c 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(217,119,6,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span style="
+                background: rgba(255,255,255,0.2);
+                padding: 0.4rem;
+                border-radius: 8px;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+              "></span>
+              <span>Temple History & Sacred Legends</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="sensoji-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="sensoji-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">✨</span>
+                  Legend of the Golden Kannon
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  In 628 AD, two fishermen brothers found a golden statue of Kannon in the Sumida River. No matter how many times they threw it back, it returned to them. The village chief recognized its sacred nature and built a temple to house it.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏮</span>
+                  Kaminarimon (Thunder Gate)
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The iconic entrance gate features a massive 700kg red lantern (chochin) that's 3.9 meters tall. The gate is dedicated to the gods of wind and thunder, who protect the temple.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛡️</span>
+                  Survived WWII Bombing
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Unlike many Tokyo temples, Senso-ji survived the 1945 air raids that destroyed much of the city, making it a symbol of resilience and continuity.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🔥</span>
+                  Sacred Incense Ritual
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Visitors wave the purifying incense smoke over themselves for good health and luck. The large incense burner (jokoro) is always surrounded by worshippers.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎋</span>
+                  Omikuji Fortune Telling
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Draw fortune sticks (omikuji) to learn your fate. If you get bad luck, tie the paper to the designated racks to leave the bad fortune behind.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--accent);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--accent);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🗼</span>
+                  Five-Story Pagoda
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The 53-meter pagoda, rebuilt in 1973, contains sacred relics and represents the Buddhist cosmology with its five elements: earth, water, fire, wind, and space.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Nakamise Shopping Street Container -->
+  <div class="container">
+    <section id="nakamise-section">
+      <h2>Nakamise Shopping Street</h2>
+      <br><br>
+      <img src="assets/nakamise-street.jpg" alt="Nakamise Shopping Street, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Nakamise Shopping Street</strong> is Japan's oldest shopping street, connecting Kaminarimon Gate to Senso-ji Temple. For over 300 years, this 250-meter pedestrian street has sold traditional snacks, souvenirs, and crafts to temple visitors.
+        </p>
+        
+        <p class="highlight-intro">
+          With about 90 shops lining both sides, Nakamise offers an authentic taste of old Tokyo commerce. The colorful shop fronts and traditional goods create a festive atmosphere that transports you back in time.
+        </p>
+      </div>
+
+      <div class="shopping-highlights">
+        <h3>Must-Try Items & Shops</h3>
+        <div class="shopping-grid">
+          <div class="shop-item">
+            <h4>🍡 Traditional Snacks</h4>
+            <ul>
+              <li><strong>Ningyo-yaki:</strong> Doll-shaped cakes filled with sweet red bean paste</li>
+              <li><strong>Melon pan:</strong> Crispy, sweet bread with melon-flavored crust</li>
+              <li><strong>Agemanju:</strong> Deep-fried sweet buns with various fillings</li>
+              <li><strong>Kibi dango:</strong> Sweet millet dumplings on sticks</li>
+            </ul>
+          </div>
+          <div class="shop-item">
+            <h4>🎁 Traditional Souvenirs</h4>
+            <ul>
+              <li><strong>Folding fans (sensu):</strong> Beautiful hand-painted designs</li>
+              <li><strong>Furoshiki cloths:</strong> Traditional wrapping cloths</li>
+              <li><strong>Chopsticks & tableware:</strong> Handcrafted wooden items</li>
+              <li><strong>Omamori:</strong> Protective amulets from the temple</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shopping Tips -->
+      <div class="shopping-tips" style="background:#f0f9ff; padding:1.5rem; border-radius:12px; margin:1.5rem 0; border-left:4px solid #3b82f6;">
+        <h4 style="color:#1e40af; margin:0 0 1rem;">Shopping Tips</h4>
+        <ul style="margin:0; color:#374151;">
+          <li>Visit early morning or late afternoon to avoid crowds</li>
+          <li>Most shops accept cash only - have yen ready</li>
+          <li>Try before you buy - many shops offer free samples</li>
+          <li>Don't eat while walking - find a designated eating area</li>
+          <li>Bargaining is not customary - prices are fixed</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Imperial Palace Gardens Container -->
+  <div class="container">
+    <section id="imperial-section">
+      <h2>Imperial Palace East Gardens</h2>
+      <br><br>
+      <img src="assets/imperial-gardens.jpg" alt="Imperial Palace East Gardens, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Imperial Palace East Gardens</strong> are built on the former site of Edo Castle, once home to the Tokugawa shoguns who ruled Japan for over 250 years. Today, these meticulously maintained gardens offer a peaceful escape in central Tokyo.
+        </p>
+        
+         <p class="highlight-intro">
+          The gardens showcase traditional Japanese landscape design with seasonal flowers, ancient stone foundations, and spectacular views. It's free to enter and represents one of Tokyo's most beautiful and historically significant green spaces.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>📍 Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 1-1 Chiyoda, Chiyoda-ku, Tokyo</li>
+          <li>🕐 Opening hours: 9:00 AM - 5:00 PM (closed Mon & Fri)</li>
+          <li>💰 Admission: Free</li>
+          <li>🚇 Station: Otemachi, Tokyo, or Takebashi stations</li>
+        </ul>
+      </div>
+
+      <!-- Garden Highlights -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleGardenFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, var(--forest,#059669) 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(5,150,105,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Garden Highlights & History</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.85rem; opacity: 0.9;"></span>
+              <span id="garden-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="garden-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏰</span>
+                  Edo Castle Ruins
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Massive stone foundations and moats remain from Edo Castle, once the world's largest castle complex. The main tower (tenshu) was never rebuilt after the 1657 fire, but the impressive stonework showcases the engineering mastery of the Tokugawa period.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌸</span>
+                  Seasonal Beauty
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Spring brings cherry blossoms, summer offers lush greenery, autumn displays colorful maple leaves, and winter provides serene snow-covered landscapes. Each season transforms the gardens into a different masterpiece.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎋</span>
+                  Traditional Garden Design
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Features classical Japanese elements: stone lanterns, carefully pruned trees, koi ponds, and strategically placed rocks creating harmony and balance. Every element is positioned to create perfect viewing angles and peaceful meditation spaces.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌿</span>
+                  Ninomaru Garden
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  A traditional daimyo (feudal lord) garden with over 260 varieties of trees and flowers, including rare species collected from across Japan. The garden represents the pinnacle of Edo period landscape architecture.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏛️</span>
+                  Museum of Imperial Collections
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Houses rotating exhibitions of art and artifacts from the Imperial collection, including paintings, calligraphy, and decorative arts spanning over 1,000 years of Japanese culture and craftsmanship.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid var(--forest);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: var(--forest);
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">📸</span>
+                  Perfect Photo Spots
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The contrast between ancient stone foundations and modern Tokyo skyscrapers creates stunning photography opportunities. The gardens offer some of the most iconic views where traditional Japan meets contemporary city life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Tokyo Skytree Container -->
+  <div class="container">
+    <section id="skytree-section">
+      <h2>Tokyo Skytree</h2>
+      <br><br>
+      <img src="assets/tokyo-skytree.jpg" alt="Tokyo Skytree, world's tallest tower" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Tokyo Skytree</strong> is the world's tallest tower at 634 meters, offering breathtaking panoramic views of Tokyo and beyond. This modern marvel combines cutting-edge technology with traditional Japanese aesthetics, making it a symbol of contemporary Japan.
+        </p>
+        
+        <p class="highlight-intro">
+          Since opening in 2012, Skytree has become Tokyo's most recognizable landmark. Its unique design incorporates traditional Japanese architectural elements while serving as a broadcasting tower and tourist destination with observation decks at 350m and 450m heights.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>📍 Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 1-1-2 Oshiage, Sumida-ku, Tokyo</li>
+          <li>🕐 Opening hours: 8:00 AM - 10:00 PM (last entry 9:00 PM)</li>
+          <li>💰 Admission: ¥2,100-3,400 (depending on deck and time)</li>
+          <li>🚇 Station: Tokyo Skytree Station (Tobu Skytree Line) or Oshiage Station</li>
+          <li>⏱️ Visit time: 1.5-2 hours including waiting and viewing</li>
+        </ul>
+      </div>
+
+      <!-- Skytree Experience Details -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleSkytreeFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(59,130,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Skytree Experience & Views</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.85rem; opacity: 0.9;"></span>
+              <span id="skytree-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="skytree-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏢</span>
+                  Tembo Deck (350m)
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The main observation deck offers 360-degree views of Tokyo. On clear days, you can see Mount Fuji, Tokyo Bay, and the sprawling cityscape. Features floor-to-ceiling windows and a glass floor section for the brave!
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌟</span>
+                  Tembo Galleria (450m)
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The highest observation deck accessible to the public. This spiral glass corridor provides an even more spectacular view and is perfect for photography. The experience includes a glass-walled walkway that curves around the tower.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌅</span>
+                  Best Viewing Times
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  <strong>Sunrise:</strong> Magical golden hour views (arrive early)<br>
+                  <strong>Sunset:</strong> Watch the city transition from day to night<br>
+                  <strong>Night:</strong> Spectacular illuminated cityscape with millions of lights
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👁️</span>
+                  What You'll See
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  • <strong>Mount Fuji:</strong> On clear days (best in winter)<br>
+                  • <strong>Tokyo Bay:</strong> Shimmer of water and Rainbow Bridge<br>
+                  • <strong>Imperial Palace:</strong> Green oasis in the urban landscape<br>
+                  • <strong>Shibuya Crossing:</strong> Tiny but recognizable intersection<br>
+                  • <strong>Tokyo Dome:</strong> Distinctive white dome stadium<br>
+                  • <strong>Odaiba:</strong> Futuristic island with colorful buildings
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏗️</span>
+                  Design & Architecture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The tower's design is based on traditional Japanese pagoda architecture, with a triangular base that gradually becomes circular as it rises. The structure can withstand earthquakes and strong winds, showcasing Japanese engineering excellence.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛍️</span>
+                  Skytree Town
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The base complex includes Solamachi shopping mall with 312 shops and restaurants, an aquarium, and a planetarium. Perfect for shopping and dining before or after your tower visit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Ueno District Container -->
+  <div class="container">
+    <section id="ueno-section">
+      <h2>Ueno District</h2>
+      <br><br>
+      <img src="assets/ueno-park.jpg" alt="Ueno Park cherry blossoms, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Ueno District</strong> is Tokyo's cultural heart, home to world-class museums, beautiful parks, and traditional temples. This historic area offers a perfect blend of art, nature, and spirituality, making it one of Tokyo's most rewarding destinations for cultural exploration.
+        </p>
+        
+         <p class="highlight-intro">
+          Ueno Park, established in 1873, is one of Japan's first public parks and Tokyo's most popular cherry blossom viewing spot. The district houses more museums than any other area in Tokyo, earning it the nickname "Museum Mile of Tokyo."
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>📍 Getting to Ueno</h3>
+        <ul class="location-info">
+          <li>📍 Location: Taito-ku, Tokyo</li>
+          <li>🚇 Station: Ueno Station (JR, Tokyo Metro Ginza/Hibiya Lines)</li>
+          <li>⏱️ Recommended time: 3-4 hours</li>
+          <li>🎫 Museum passes available for multiple venues</li>
+        </ul>
+      </div>
+
+      <!-- Ueno Attractions -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleUenoFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(236,72,153,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Top Ueno Attractions</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.85rem; opacity: 0.9;"></span>
+              <span id="ueno-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="ueno-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              
+              <!-- Museums Section -->
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏛️</span>
+                  Tokyo National Museum
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Japan's largest collection of cultural artifacts including samurai swords, Buddhist art, and ancient pottery. The museum houses over 110,000 items with rotating exhibitions.
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Hours:</strong> 9:30 AM - 5:00 PM (closed Mondays)<br>
+                  <strong>Admission:</strong> ¥1,000 adults<br>
+                  <strong>Highlights:</strong> Samurai armor, ancient scrolls, Buddhist statues
+                </div>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🦕</span>
+                  National Museum of Nature and Science
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Interactive exhibits on natural history, dinosaurs, and cutting-edge science and technology. Features full-size whale models and robotics exhibits.
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Hours:</strong> 9:00 AM - 5:00 PM (closed Mondays)<br>
+                  <strong>Admission:</strong> ¥630 adults<br>
+                  <strong>Highlights:</strong> Full-size whale models, robotics exhibits, planetarium
+                </div>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⛩️</span>
+                  Toshogu Shrine
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Dedicated to Tokugawa Ieyasu, founder of the Tokugawa shogunate. Famous for its ornate golden decorations and intricate wood carvings.
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Built:</strong> 1627, showcasing Edo period craftsmanship<br>
+                  <strong>Features:</strong> Gold leaf decorations, intricate wood carvings<br>
+                  <strong>Significance:</strong> Memorial to Japan's most powerful shogun
+                </div>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌸</span>
+                  Cherry Blossom Paradise
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Over 1,000 cherry trees make this Tokyo's most famous hanami (cherry blossom viewing) spot. Traditional picnics under the blossoms are a beloved springtime tradition.
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Best time:</strong> Late March to early May<br>
+                  <strong>Hanami parties:</strong> Traditional picnics under the blossoms<br>
+                  <strong>Varieties:</strong> Somei Yoshino, Yamazakura, and other species
+                </div>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🐼</span>
+                  Ueno Zoo
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Japan's oldest zoo (1882) and home to the famous giant pandas Ri Ri and Shin Shin. The panda viewing can have long queues but is worth the wait!
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Famous residents:</strong> Giant pandas, polar bears, gorillas<br>
+                  <strong>Admission:</strong> ¥600 adults<br>
+                  <strong>Highlight:</strong> Panda viewing (can have long queues!)
+                </div>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏪</span>
+                  Ameyoko Market
+                </h4>
+                <p style="margin: 0 0 0.8rem; color: #374151; line-height: 1.7;">
+                  Bustling market street with over 400 shops selling everything from snacks to vintage goods. This post-WWII black market has evolved into a beloved shopping destination.
+                </p>
+                <div style="
+                  background: rgba(236,72,153,0.1);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  margin-top: 0.8rem;
+                  font-size: 0.9rem;
+                  color: #4a5568;
+                ">
+                  <strong>Atmosphere:</strong> Lively, traditional market feel<br>
+                  <strong>Products:</strong> Street food, clothes, souvenirs, spices<br>
+                  <strong>Must-try:</strong> Takoyaki, fresh seafood, traditional sweets
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Ginza District Container -->
+  <div class="container">
+    <section id="ginza-section">
+      <h2>Ginza District</h2>
+      <br><br>
+      <img src="assets/ginza-night.jpg" alt="Ginza district at night, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Ginza</strong> is Tokyo's most prestigious district, synonymous with luxury shopping, fine dining, and sophisticated nightlife. This upscale area houses world-class restaurants, from traditional Japanese cuisine to international Michelin-starred establishments.
+        </p>
+        
+        <p class="highlight-intro">
+          For dinner, Ginza offers everything from intimate sushi counters and traditional kaiseki restaurants to modern fusion cuisine. The elegant atmosphere and impeccable service make it perfect for a special evening meal.
+        </p>
+      </div>
+
+      <!-- Restaurant Recommendations -->
+      <div class="restaurant-recommendations">
+        <h3>Recommended Dining Options</h3>
+        <div class="restaurant-grid">
+          <div class="restaurant-card premium">
+            <div class="restaurant-badge">Michelin ⭐</div>
+            <h4>🍣 Sushi Yoshitake</h4>
+            <p><strong>Style:</strong> High-end sushi omakase</p>
+            <p><strong>Price:</strong> ¥30,000-50,000 per person</p>
+            <p><strong>Experience:</strong> Intimate 7-seat counter, exceptional Edo-mae sushi</p>
+            <p><strong>Reservation:</strong> Required well in advance</p>
+          </div>
+          
+          <div class="restaurant-card">
+            <h4>🍱 Ginza Bairin</h4>
+            <p><strong>Style:</strong> Traditional tonkatsu</p>
+            <p><strong>Price:</strong> ¥2,000-4,000 per person</p>
+            <p><strong>Experience:</strong> Famous crispy pork cutlets since 1927</p>
+            <p><strong>Atmosphere:</strong> Classic, no-frills Japanese dining</p>
+          </div>
+          
+          <div class="restaurant-card">
+            <h4>🦀 Kani Doraku Honten</h4>
+            <p><strong>Style:</strong> Premium crab cuisine</p>
+            <p><strong>Price:</strong> ¥8,000-15,000 per person</p>
+            <p><strong>Experience:</strong> Famous for fresh crab dishes and iconic giant crab sign</p>
+            <p><strong>Specialty:</strong> Hokkaido snow crab, multiple preparations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ginza Evening Activities -->
+      <div class="evening-activities" style="background:linear-gradient(135deg,#fef3c7 0%,#ffffff 100%); padding:2rem; border-radius:16px; margin:2rem 0; border-left:4px solid var(--gold,#d97706);">
+        <h4 style="color:var(--ink,#1f2937); margin:0 0 1rem;">🌃 After Dinner in Ginza</h4>
+        <ul style="margin:0; color:#4a5568; line-height:1.6;">
+          <li><strong>Window Shopping:</strong> Browse luxury boutiques along Chuo-dori street</li>
+          <li><strong>Depachika:</strong> Explore department store basement food halls</li>
+          <li><strong>Traditional Bars:</strong> Visit classic whisky bars or sake establishments</li>
+          <li><strong>Architecture:</strong> Admire the mix of historic and ultra-modern buildings</li>
+          <li><strong>Night Views:</strong> Enjoy the sophisticated lighting and atmosphere</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day 2 Route Map</h2>
+      <div class="map-container" style="margin:2rem 0;">
+        <iframe 
+          src="https://www.google.com/maps/d/u/0/embed?mid=1m7CJnxtzaPLq6k3nzkkFQfV19LpPsIY&ehbc=2E312F" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <!-- Travel Tips -->
+      <div class="travel-tips" style="background:#ecfdf5; padding:1.5rem; border-radius:12px; border-left:4px solid #10b981;">
+        <h4 style="color:#047857; margin:0 0 1rem;">🚇 Transportation Tips</h4>
+        <ul style="margin:0; color:#065f46;">
+          <li>Start at Asakusa Station → Senso-ji Temple (2-minute walk)</li>
+          <li>Asakusa → Otemachi (15 minutes via Ginza Line)</li>
+          <li>Imperial Gardens → Ginza (10 minutes via Marunouchi Line)</li>
+          <li>Use your IC card for seamless transfers</li>
+          <li>Allow extra time for photos and exploration</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day1.html">⬅ Back to Day 1</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day3.html">Go to Day 3 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality - FIXED VERSION
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        // Uncheck
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        // Check
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      // Celebration effect when all items are checked
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 2 activities! What an amazing adventure through Traditional Tokyo!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleSensojiFacts() {
+      toggleDropdown('sensoji-facts-content', 'sensoji-arrow');
+    }
+
+    function toggleGardenFacts() {
+      toggleDropdown('garden-facts-content', 'garden-arrow');
+    }
+
+    function toggleSkytreeFacts() {
+      toggleDropdown('skytree-facts-content', 'skytree-arrow');
+    }
+
+    function toggleUenoFacts() {
+      toggleDropdown('ueno-facts-content', 'ueno-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+</script>
+
+  <!-- Add this CSS to handle mobile responsiveness -->
+  <style>
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(0) rotate(0deg); 
+    }
+    50% { 
+      transform: translateY(-15px) rotate(5deg); 
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important; /* Much smaller padding */
+      margin-top: 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important; /* Smaller gap */
+      border-radius: 20px !important; /* Smaller radius */
+    }
+    
+    .day-number {
+      font-size: 0.8rem !important; /* Smaller font */
+    }
+    
+    .day-date {
+      font-size: 0.7rem !important; /* Smaller font */
+      padding-left: 0.5rem !important; /* Less padding */
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+    
+    .day-badge .day-number {
+      margin: 0 !important;
+    }
+    
+    .day-badge .day-date {
+      margin: 0 !important;
+      border-left: 1px solid rgba(255,255,255,0.3) !important;
+    }
+    
+    .floating-elements div {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .day-page-header {
+      min-height: 50vh !important;
+      padding-top: 120px !important;
+    }
+    
+    .day-hero {
+      padding: 0.5rem !important;
+      padding-top: 1.5rem !important;
+    }
+    
+    .day-badge {
+      margin-top: 1.5rem !important;
+      padding: 0.25rem 0.6rem !important; /* Even smaller on very small screens */
+      gap: 0.4rem !important;
+      border-radius: 15px !important;
+    }
+    
+    .day-number {
+      font-size: 1rem !important;
+    }
+    
+    .day-date {
+      font-size: 1rem !important;
+      padding-left: 0.4rem !important;
+    }
+    
+    .location, .weather {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .day-title {
+      font-size: 2.2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .day-subtitle {
+      font-size: 1.1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  /* Remove the fixed background from body for this page */
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>

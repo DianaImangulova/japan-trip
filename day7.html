@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 7 - Arrival in Osaka | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/osaka.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 7</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 29</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Osaka Adventure Begins
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Japan's Kitchen & Culinary Capital</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🍜 Food Paradise</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏰 Historic Castle</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-7-overview">
+      <h2>Today's Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#travel-section" style="color: #3b82f6; text-decoration: none;">Shinkansen to Osaka</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">High-speed journey from Kyoto to Japan's culinary capital</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ef4444;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#kuromon-section" style="color: #ef4444; text-decoration: none;">Kuromon Ichiba Market</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Fresh seafood, street food, and culinary adventures</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#dotonbori-section" style="color: #f59e0b; text-decoration: none;">Dotonbori District Exploration</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Neon lights, street food, and Osaka's most famous entertainment district</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #ef4444, #f59e0b);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+  <!-- Kuromon Ichiba Market Container -->
+  <div class="container">
+    <section id="kuromon-section">
+      <h2>Kuromon Ichiba Market</h2>
+      <br><br>
+      <img src="assets/kuromon-market.jpg" alt="Kuromon Ichiba Market street food" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Kuromon Ichiba Market</strong> has been Osaka's kitchen for over 190 years. This 600-meter-long covered market is famous for its incredibly fresh seafood, wagyu beef, exotic fruits, and endless street food options that represent the best of Osaka's culinary culture.
+        </p>
+        
+        <p class="highlight-intro">
+          Known as "Kuromon-san" by locals, this market comes alive with vendors calling out their specialties, tourists sampling delicacies, and the intoxicating aromas of grilled seafood, takoyaki, and other Osaka favorites filling the air.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🍜 Market Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Nippombashi, Chuo Ward</li>
+          <li>🕐 Hours: 9:00 AM - 6:00 PM (varies by vendor)</li>
+          <li>🚇 Access: Nippombashi Station, 2-minute walk</li>
+          <li>👥 Best time: 10:00 AM - 2:00 PM for freshest selection</li>
+          <li>💳 Payment: Cash preferred, some vendors accept cards</li>
+        </ul>
+      </div>
+
+      <!-- Market Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleMarketFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+          ">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Must-Try Market Delicacies</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="market-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="market-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🦀</span>
+                  Fresh Seafood Sashimi
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Try incredibly fresh tuna, salmon, and sea urchin sashimi prepared right before your eyes. Some vendors offer the famous Osaka-style pressed sushi with local fish varieties.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🥩</span>
+                  Kobe & Wagyu Beef Skewers
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Premium wagyu beef grilled on skewers - incredibly tender and marbled. Many vendors offer samples, and the quality rivals high-end restaurants at fraction of the cost.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🐙</span>
+                  Takoyaki & Taiyaki
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Authentic Osaka-style takoyaki (octopus balls) made with secret family recipes. Also try taiyaki (fish-shaped pastries) filled with sweet red bean paste or custard.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ef4444;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ef4444;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍓</span>
+                  Exotic Fruits & Mochi
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Sample premium Japanese strawberries, white peaches, and exotic fruits. Don't miss freshly made mochi in unique flavors and beautifully crafted wagashi traditional sweets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Market Tips -->
+            <div style="
+              margin-top: 2rem;
+              padding: 1.5rem;
+              background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+              border-radius: 12px;
+              border: 2px dashed #e9ecef;
+            ">
+              <h4 style="
+                color: var(--ink);
+                margin: 0 0 1rem;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              ">
+                <span style="font-size: 1.2rem;">💡</span>
+                Market Insider Tips
+              </h4>
+              <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                font-size: 0.9rem;
+              ">
+                <div><strong>Bring cash:</strong> Most vendors prefer cash payments</div>
+                <div><strong>Come hungry:</strong> Portions are generous and meant for sharing</div>
+                <div><strong>Follow the locals:</strong> Busy stalls usually have the best food</div>
+                <div><strong>Ask for samples:</strong> Many vendors offer free tastings</div>
+                <div><strong>Peak times:</strong> Avoid lunch rush (12-1 PM) for better experience</div>
+                <div><strong>Learn basics:</strong> "Oishii" (delicious) and "arigato" go a long way</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Dotonbori District Container -->
+  <div class="container">
+    <section id="dotonbori-section">
+      <h2>Dotonbori District</h2>
+      <br><br>
+      <img src="assets/dotonbori-neon.jpg" alt="Dotonbori neon lights and canal" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Dotonbori</strong> is Osaka's most iconic entertainment district, famous for its neon signs, canal-side dining, and the giant mechanical crab that has become a symbol of the city. This vibrant area pulses with energy day and night, offering an authentic taste of Osaka's spirited culture.
+        </p>
+        
+        <p class="highlight-intro">
+          The district perfectly embodies Osaka's "kuidaore" philosophy - to eat until you drop. With its theatrical restaurant signs, street performances, and endless food options, Dotonbori is where Osaka's reputation as Japan's kitchen truly comes alive.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏮 District Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Chuo Ward, along Dotonbori River</li>
+          <li>🕐 Best time: Evening (5:00 PM - 11:00 PM)</li>
+          <li>🚇 Access: Namba Station, 5-minute walk</li>
+          <li>📸 Photo spot: Glico Running Man sign</li>
+          <li>🎭 Features: Giant food signs, canal cruises, street food</li>
+        </ul>
+      </div>
+
+      <!-- Dotonbori Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleDotonboriFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+          ">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Dotonbori Highlights & Culture</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="dotonbori-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="dotonbori-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🦀</span>
+                  Iconic Giant Signs
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The famous giant mechanical crab, blowfish, and octopus signs are must-see landmarks. These kinetic advertisements have been attracting visitors for decades and represent Osaka's playful spirit.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏃</span>
+                  Glico Running Man
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The illuminated Glico sign with the running man has been a Dotonbori landmark since 1935. It's one of Japan's most photographed advertising signs and a symbol of Osaka's energy.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🚤</span>
+                  Canal Cruise Experience
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Take a scenic boat ride along the Dotonbori River to see the district from a unique perspective. The reflections of neon lights on the water create a magical atmosphere, especially at night.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎪</span>
+                  Street Food Culture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  This is ground zero for Osaka street food culture. Try okonomiyaki, takoyaki, ikayaki (grilled squid), and kushikatsu from the numerous stalls and small restaurants lining the streets.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎭</span>
+                  Entertainment Heritage
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Dotonbori has been an entertainment district since the 1600s. Traditional theaters, modern clubs, karaoke boxes, and comedy shows keep the area buzzing with energy well into the night.
+                </p>
+              </div>
+            </div>
+
+            <!-- Evening Activities -->
+            <div style="
+              margin-top: 2rem;
+              padding: 1.5rem;
+              background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+              border-radius: 12px;
+              border: 2px dashed #e9ecef;
+            ">
+              <h4 style="
+                color: var(--ink);
+                margin: 0 0 1rem;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              ">
+                <span style="font-size: 1.2rem;">🌃</span>
+                Perfect Evening Activities
+              </h4>
+              <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                font-size: 0.9rem;
+              ">
+                <div><strong>5:00 PM:</strong> Arrive as lights start turning on</div>
+                <div><strong>6:00 PM:</strong> Canal cruise for sunset views</div>
+                <div><strong>7:00 PM:</strong> Street food crawl along the main strip</div>
+                <div><strong>8:00 PM:</strong> Photo session at Glico sign</div>
+                <div><strong>9:00 PM:</strong> Explore side alleys for hidden gems</div>
+                <div><strong>10:00 PM:</strong> End with drinks overlooking the canal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Book Shinkansen seats early for preferred departure time</li>
+          <li>Bring cash for Kuromon Market - many vendors don't accept cards</li>
+          <li>Download Google Translate app for food ordering</li>
+          <li>Leave hotel luggage storage and explore hands-free</li>
+          <li>Best lighting for Dotonbori photos is just after sunset</li>
+          <li>Try local Osaka specialties: takoyaki, okonomiyaki, kushikatsu</li>
+          <li>Keep hotel business card for easy taxi directions</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day6.html">⬅ Back to Day 6</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day8.html">Go to Day 8 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 7 activities! Welcome to Osaka - Japan\'s Kitchen!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleTravelFacts() {
+      toggleDropdown('travel-facts-content', 'travel-arrow');
+    }
+
+    function toggleHotelFacts() {
+      toggleDropdown('hotel-facts-content', 'hotel-arrow');
+    }
+
+    function toggleMarketFacts() {
+      toggleDropdown('market-facts-content', 'market-arrow');
+    }
+
+    function toggleDotonboriFacts() {
+      toggleDropdown('dotonbori-facts-content', 'dotonbori-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+  </script>
+
+  <!-- CSS for animations and mobile responsiveness -->
+  <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important;
+      margin-top: 1rem !important;
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+  }
+
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>

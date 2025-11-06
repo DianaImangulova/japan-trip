@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 13 - Electric City | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/akihabara.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 13</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">December 5</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Electric City
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Let's dive in subculture</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🎮 Akihabara District</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">Arcades and electronics</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-13-overview">
+      <h2>Today's Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#akihabara-section" style="color: #3b82f6; text-decoration: none;">Akihabara Electric Town</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Electronics paradise and otaku culture headquarters</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #8b5cf6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#arcade-section" style="color: #8b5cf6; text-decoration: none;">Multi-Story Arcade Adventures</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Gaming halls with classic and cutting-edge arcade machines</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#shopping-section" style="color: #f59e0b; text-decoration: none;">Electronics & Anime Shopping</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Manga stores, figure shops, and cutting-edge gadgets</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #22c55e, #8b5cf6);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <!-- Akihabara Container -->
+  <div class="container">
+    <section id="akihabara-section">
+      <h2>Akihabara Electric Town</h2>
+      <br><br>
+      <img src="assets/akihabara-electric-town.jpg" alt="Akihabara Electric Town" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Akihabara</strong>, known as "Electric Town," is the global center of otaku culture and electronics shopping. This district evolved from a post-war electronics market into the epicenter of anime, manga, and gaming culture.
+        </p>
+        
+        <p class="highlight-intro">
+          Neon-lit streets buzz with multi-story electronics stores, manga cafes, maid cafes, and specialty shops selling everything from vintage electronics to the latest anime figures. It's a sensory overload of Japanese pop culture.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🎮 Akihabara Highlights</h3>
+        <ul class="location-info">
+          <li>🏢 Yodobashi Camera: Massive electronics megastore</li>
+          <li>📚 Mandarake: Vintage manga and collectibles</li>
+          <li>☕ Maid Cafes: Unique Japanese pop culture experience</li>
+          <li>🎯 Animate: Anime and character goods paradise</li>
+          <li>🔌 Radio Kaikan: Electronics components and gadgets</li>
+        </ul>
+      </div>
+
+      <!-- Akihabara Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleAkihabaraFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(59,130,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Otaku Culture & Electronics Evolution</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="akihabara-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="akihabara-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⚡</span>
+                  From Electronics to Entertainment
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Post-WWII, Akihabara became a black market for electronics parts. As Japan's tech industry boomed, it evolved into Electric Town. The rise of gaming and anime culture transformed it into the otaku paradise it is today.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎌</span>
+                  Otaku Culture Hub
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  "Otaku" originally meant obsessive fan, but Akihabara helped transform it into a celebrated subculture. The district nurtures passionate communities around anime, manga, gaming, and technology.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌍</span>
+                  Global Cool Japan
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Akihabara became the face of "Cool Japan" - the country's soft power export of pop culture. International tourists pilgrim here to experience authentic Japanese anime and gaming culture at its source.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Arcade Container -->
+  <div class="container">
+    <section id="arcade-section">
+      <h2>Multi-Story Arcade Adventures</h2>
+      <br><br>
+      <img src="assets/akihabara-arcade-games.jpg" alt="Akihabara arcade games" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Japanese arcades</strong> are multi-story entertainment complexes featuring the latest in gaming technology alongside retro classics. Each floor often specializes in different types of games, from rhythm games to fighting tournaments.
+        </p>
+        
+        <p class="highlight-intro">
+          These aren't just gaming halls - they're social spaces where communities gather around shared passions. The atmosphere buzzes with electronic sounds, competitive energy, and the joy of play across all generations.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🕹️ Arcade Experiences</h3>
+        <ul class="location-info">
+          <li>🎵 Rhythm Games: Taiko no Tatsujin, Dance Dance Revolution</li>
+          <li>🥊 Fighting Games: Street Fighter, Tekken tournaments</li>
+          <li>🎣 Prize Games: UFO catchers with exclusive anime figures</li>
+          <li>📷 Photo Booths: Purikura with elaborate decorations</li>
+          <li>🎮 Retro Games: Classic arcade cabinets from the 80s and 90s</li>
+        </ul>
+      </div>
+
+      <!-- Arcade Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleArcadeFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(139,92,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Gaming Culture & Community</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="arcade-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="arcade-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎯</span>
+                  Skill-Based Entertainment
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Japanese arcades emphasize skill development and mastery. Players spend years perfecting techniques in rhythm games or fighting games, creating dedicated communities around competitive excellence.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎨</span>
+                  Technological Innovation
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Japan pioneered many gaming innovations: motion controls, rhythm gaming, photo sticker machines (purikura), and advanced prize-catching mechanics. Arcades serve as testing grounds for new entertainment technology.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👥</span>
+                  Social Gaming Spaces
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Unlike home gaming, arcades foster real-world social interaction. Players gather to watch tournaments, share techniques, and celebrate achievements together, creating lasting friendships through shared gaming passion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Shopping Container -->
+  <div class="container">
+    <section id="shopping-section">
+      <h2>Electronics & Anime Shopping</h2>
+      <br><br>
+      <img src="assets/akihabara-shopping-streets.jpg" alt="Akihabara shopping streets" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          Akihabara offers unparalleled shopping for electronics, anime goods, and otaku culture items. From cutting-edge gadgets to rare vintage collectibles, this district is a treasure hunter's paradise for tech enthusiasts and pop culture fans.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🛒 Shopping Highlights</h3>
+        <ul class="location-info">
+          <li>🎌 Animate: Latest anime merchandise and character goods</li>
+          <li>📱 Yodobashi Camera: Electronics megastore with tax-free shopping</li>
+          <li>🎮 Super Potato: Retro gaming paradise with rare consoles</li>
+          <li>🎭 Mandarake: Vintage manga, figures, and collectibles</li>
+          <li>🔧 Radio Center: Electronic components and DIY parts</li>
+        </ul>
+      </div>
+
+      <!-- Shopping Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fefbf2 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShoppingFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Tech Shopping & Collectibles</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shopping-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shopping-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fefbf2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💎</span>
+                  Rare & Exclusive Items
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Akihabara specializes in limited edition items, import-only electronics, and exclusive anime merchandise unavailable elsewhere. Many products debut here before reaching global markets.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fefbf2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💰</span>
+                  Tax-Free Shopping
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Many stores offer tax-free shopping for tourists, making expensive electronics more affordable. Staff often speak multiple languages and understand international shipping requirements.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fefbf2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎯</span>
+                  Passionate Collectors
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Shop owners and customers share deep knowledge about their specialties. This passionate expertise creates a unique shopping experience where you learn while you browse, discovering items you never knew existed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Imperial Palace East Gardens are closed Mondays and Fridays</li>
+          <li>Bring passport for tax-free shopping in electronics stores</li>
+          <li>Try arcade games even if you're a beginner - staff are helpful</li>
+          <li>Akihabara is busiest on weekends with more cosplayers</li>
+          <li>Many maid cafes require reservations or have cover charges</li>
+          <li>Bargaining isn't common except at some second-hand stores</li>
+          <li>Download Google Translate camera for reading Japanese game titles</li>
+          <li>Keep small coins for arcade games and vending machines</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day12.html">⬅ Back to Day 12</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const items = document.querySelectorAll('.checklist-item');
+      const checkedItems = document.querySelectorAll('.checklist-item.checked');
+      const progress = (checkedItems.length / items.length) * 100;
+      
+      document.getElementById('progress-bar').style.width = progress + '%';
+      document.getElementById('progress-text').textContent = `${checkedItems.length} of ${items.length} completed`;
+    }
+
+    // Facts Toggle Functions
+    function toggleImperialFacts() {
+      const content = document.getElementById('imperial-facts-content');
+      const arrow = document.getElementById('imperial-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleAkihabaraFacts() {
+      const content = document.getElementById('akihabara-facts-content');
+      const arrow = document.getElementById('akihabara-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleArcadeFacts() {
+      const content = document.getElementById('arcade-facts-content');
+      const arrow = document.getElementById('arcade-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleShoppingFacts() {
+      const content = document.getElementById('shopping-facts-content');
+      const arrow = document.getElementById('shopping-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+
+</body>
+</html>

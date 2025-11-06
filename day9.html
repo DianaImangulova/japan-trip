@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 9 - Final Osaka Adventure | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/osaka-bay-sunset.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 9</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">December 1</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Osaka Bay & Modern Districts
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Aquarium, Ferris Wheel & Waterfront Views</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🌊 Osaka Bay</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🎡 Tempozan Harbor</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-9-overview">
+      <h2>Today's Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #0ea5e9;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#aquarium-section" style="color: #0ea5e9; text-decoration: none;">Osaka Aquarium Kaiyukan</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">One of the world's largest aquariums with whale sharks and Pacific Rim exhibits</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#tempozan-section" style="color: #f59e0b; text-decoration: none;">Tempozan Giant Ferris Wheel</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">112-meter tall observation wheel with panoramic Osaka Bay views</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#namba-section" style="color: #10b981; text-decoration: none;">Namba Parks Shopping & Garden</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Multi-level rooftop garden and premium shopping complex</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #dc2626;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#okonomiyaki-section" style="color: #dc2626; text-decoration: none;">Okonomiyaki Museum & Tasting</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Learn about and taste Osaka's famous savory pancake specialty</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #8b5cf6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#umeda-section" style="color: #8b5cf6; text-decoration: none;">Umeda Sky Building Observatory</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Floating observatory with 360-degree city views and sunset experience</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 5 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #0ea5e9, #8b5cf6);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Aquarium Container -->
+  <div class="container">
+    <section id="aquarium-section">
+      <h2>Osaka Aquarium Kaiyukan</h2>
+      <br><br>
+      <img src="assets/kaiyukan-aquarium.jpg" alt="Osaka Aquarium Kaiyukan" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Osaka Aquarium Kaiyukan</strong> is one of the world's largest public aquariums, famous for its massive central tank housing whale sharks. The aquarium recreates the Pacific Ring of Fire with habitats from around the Pacific Rim.
+        </p>
+        
+        <p class="highlight-intro">
+          The unique spiral-shaped building allows visitors to descend through 8 floors, observing marine life from different depths and perspectives. The centerpiece 5,400-ton Pacific Ocean tank is truly breathtaking.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🐠 Aquarium Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Tempozan Harbor Village, Minato Ward</li>
+          <li>🕐 Hours: 10:00 AM - 8:00 PM (last entry 7:00 PM)</li>
+          <li>💰 Admission: ¥2,700 adults, ¥1,400 children</li>
+          <li>🚇 Access: Osakako Station (5-minute walk)</li>
+          <li>🦈 Famous for: Whale sharks and Pacific Ring of Fire exhibits</li>
+        </ul>
+      </div>
+
+      <!-- Aquarium Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleAquariumFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(14,165,233,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Marine Life Wonders</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="aquarium-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="aquarium-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #0ea5e9;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #0ea5e9;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🦈</span>
+                  Whale Shark Giants
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The centerpiece Pacific Ocean tank houses two whale sharks, the world's largest fish species. These gentle giants can grow up to 12 meters long and are fed twice daily in spectacular feeding shows.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #0ea5e9;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #0ea5e9;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌊</span>
+                  Pacific Ring of Fire
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The aquarium recreates diverse Pacific ecosystems including Japanese forests, Aleutian Islands, Monterey Bay, and Great Barrier Reef. Each habitat showcases unique marine life from around the Pacific Rim.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #0ea5e9;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #0ea5e9;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏢</span>
+                  Unique Architecture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The innovative spiral design allows visitors to view the same tanks from multiple levels, simulating a dive from surface to ocean floor. The journey takes you through 8 floors of marine wonder.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Tempozan Ferris Wheel Container -->
+  <div class="container">
+    <section id="tempozan-section">
+      <h2>Tempozan Giant Ferris Wheel</h2>
+      <br><br>
+      <img src="assets/tempozan-ferris-wheel.jpg" alt="Tempozan Giant Ferris Wheel" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Tempozan Giant Ferris Wheel</strong> stands 112.5 meters tall and was once the world's largest Ferris wheel. It offers spectacular 360-degree views of Osaka Bay, the city skyline, and on clear days, even Mount Fuji.
+        </p>
+        
+        <p class="highlight-intro">
+          The wheel features 60 gondolas and takes about 17 minutes for a complete rotation. At night, the wheel becomes a giant illuminated landmark with LED displays that can be seen from across the bay.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🎡 Ferris Wheel Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Tempozan Harbor Village, next to the aquarium</li>
+          <li>🕐 Hours: 10:00 AM - 10:00 PM (until 8:30 PM in winter)</li>
+          <li>💰 Admission: ¥800 adults, ¥400 children</li>
+          <li>⏱️ Ride time: 17 minutes per rotation</li>
+          <li>🌅 Best views: Sunset and evening illumination</li>
+        </ul>
+      </div>
+
+      <!-- Ferris Wheel Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleFerrisWheelFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Sky-High Views & Features</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="ferriswheel-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="ferriswheel-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏔️</span>
+                  Mount Fuji Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  On exceptionally clear days, Mount Fuji is visible from the top of the wheel, located about 140km away. The best viewing conditions are typically during winter months with crisp, clear weather.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💡</span>
+                  LED Light Shows
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The wheel transforms into a massive LED display at night, showing weather forecasts, animations, and special seasonal illuminations. The colors change to reflect weather conditions for the next day.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌅</span>
+                  Sunset Romance
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The golden hour provides the most romantic views as the sun sets over Osaka Bay. The 17-minute ride is perfectly timed to experience the transition from daylight to the sparkling city lights below.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Namba Parks Container -->
+  <div class="container">
+    <section id="namba-section">
+      <h2>Namba Parks</h2>
+      <br><br>
+      <img src="assets/namba-parks-garden.jpg" alt="Namba Parks rooftop garden" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Namba Parks</strong> is an innovative shopping complex featuring a spectacular multi-level rooftop garden that creates a "canyon" effect. This award-winning architectural marvel combines retail, dining, and nature in downtown Osaka.
+        </p>
+        
+        <p class="highlight-intro">
+          The 8-level rooftop park features waterfalls, cliffs, lawns, and over 300 varieties of trees and plants. It's a green oasis in the urban jungle, offering a unique shopping and relaxation experience.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🌺 Namba Parks Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Naniwa Ward, directly above Namba Station</li>
+          <li>🕐 Hours: 11:00 AM - 9:00 PM (restaurants until 11:00 PM)</li>
+          <li>🌿 Rooftop garden: Free access during mall hours</li>
+          <li>🚇 Access: Direct connection to Namba Station</li>
+          <li>🛍️ Features: 120+ shops, restaurants, and entertainment</li>
+        </ul>
+      </div>
+
+      <!-- Namba Parks Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleNambaFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Urban Garden & Shopping</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="namba-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="namba-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏗️</span>
+                  Architectural Marvel
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Designed by American architect Jon Jerde, the building won the 2004 FIABCI Prix d'Excellence Award. The curved canyon design creates a natural amphitheater effect that hosts outdoor events and concerts.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌿</span>
+                  Rooftop Paradise
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The 8-level rooftop garden spans 70,000 square feet and features waterfalls cascading down 60 feet, creating a peaceful natural environment above the bustling city. Each level offers different plants and views.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛍️</span>
+                  Shopping & Dining
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The complex houses over 120 specialty shops, including Japanese fashion brands, international retailers, and unique boutiques. The dining floors offer everything from casual cafes to upscale restaurants with garden views.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Okonomiyaki Museum Container -->
+  <div class="container">
+    <section id="okonomiyaki-section">
+      <h2>Okonomiyaki Tasting</h2>
+      <br><br>
+      <img src="assets/okonomiyaki-making.jpg" alt="Making okonomiyaki" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Okonomiyaki</strong> is Osaka's signature dish - a savory pancake that literally means "grilled as you like it." This beloved comfort food represents the soul of Osaka's food culture and working-class spirit.
+        </p>
+        
+        <p class="highlight-intro">
+          Visit authentic okonomiyaki restaurants in Namba or try making your own at interactive cooking experiences. Learn about the history, regional variations, and proper eating techniques of this iconic dish.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🍱 Okonomiyaki Information</h3>
+        <ul class="location-info">
+          <li>📍 Best areas: Namba, Shinsekai, and Dotonbori districts</li>
+          <li>🍽️ Must-try shops: Mizuno, Kiji, Okonomiyaki Katsu</li>
+          <li>💰 Price range: ¥800-1,500 per okonomiyaki</li>
+          <li>⏰ Best time: Lunch or dinner for authentic atmosphere</li>
+          <li>🥢 Eating style: Use small spatula and chopsticks</li>
+        </ul>
+      </div>
+
+      <!-- Okonomiyaki Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleOkonomiyakiFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(220,38,38,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Osaka's Soul Food</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="okonomiyaki-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="okonomiyaki-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">📜</span>
+                  Historical Origins
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Born during WWII food shortages, okonomiyaki was a creative way to make filling meals from limited ingredients. It evolved from simpler flour-based dishes and became Osaka's symbol of resilience and creativity.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🥬</span>
+                  Ingredients & Variations
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The base includes flour, eggs, shredded cabbage, and dashi. Popular additions include pork belly, seafood, cheese, or mochi. Each region has its style - Osaka's is mixed together, while Hiroshima's is layered.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍽️</span>
+                  Eating Etiquette
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Use the small metal spatula to cut portions, then pick up with chopsticks. Don't cut the entire pancake at once - it's considered rude. The communal cooking experience is as important as the taste!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Umeda Sky Building Container -->
+  <div class="container">
+    <section id="umeda-section">
+      <h2>Umeda Sky Building</h2>
+      <br><br>
+      <img src="assets/umeda-sky-building.jpg" alt="Umeda Sky Building floating observatory" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Umeda Sky Building</strong> is an architectural masterpiece featuring a unique "floating" observatory connecting two towers. This futuristic landmark offers some of the best panoramic views of Osaka and unforgettable sunset experiences.
+        </p>
+        
+        <p class="highlight-intro">
+          The building's innovative design includes escalators that transport visitors through a tunnel of lights to the circular observation deck 173 meters above ground. It's particularly magical during evening hours when the city lights begin to sparkle.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🌃 Sky Building Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Kita Ward, near Osaka Station</li>
+          <li>🕐 Hours: 9:30 AM - 10:30 PM (last entry 10:00 PM)</li>
+          <li>💰 Admission: ¥1,500 adults, ¥700 children</li>
+          <li>🚇 Access: JR Osaka Station (7-minute walk)</li>
+          <li>🌅 Best time: Sunset to evening for city lights</li>
+        </ul>
+      </div>
+
+      <!-- Umeda Sky Building Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleUmedaFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(139,92,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Floating Observatory Views</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="umeda-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="umeda-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏗️</span>
+                  Architectural Innovation
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Completed in 1993, the building was revolutionary for its time. The twin towers are connected by a "floating" observatory that appears to hover in the sky, creating an otherworldly architectural experience.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">✨</span>
+                  Tunnel of Lights
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The journey to the observatory includes riding escalators through a tunnel illuminated with stars and lights, creating a space-age experience. The anticipation builds as you ascend to the floating deck.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌃</span>
+                  360-Degree Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The circular observation deck provides unobstructed 360-degree views of Osaka. You can see Osaka Castle, the bay area, mountains in the distance, and the sprawling urban landscape stretching to the horizon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Start early at the aquarium to see feeding times (11:00 AM & 3:00 PM)</li>
+          <li>Combo tickets available for aquarium + Ferris wheel</li>
+          <li>Visit Umeda Sky Building for sunset around 5:30-6:00 PM</li>
+          <li>Namba Parks is perfect for lunch and shopping breaks</li>
+          <li>Try making okonomiyaki yourself at interactive restaurants</li>
+          <li>Bring a camera for incredible Osaka Bay and city views</li>
+          <li>Check weather for best Ferris wheel and observatory experiences</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day8.html">⬅ Back to Day 8</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day10.html">Go to Day 10 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = 5;
+      const completedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercentage = (completedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      progressBar.style.width = `${progressPercentage}%`;
+      progressText.innerText = `${completedItems} of ${totalItems} completed`;
+    }
+    
+    // Dropdown toggle functions
+    function toggleAquariumFacts() {
+      const content = document.getElementById('aquarium-facts-content');
+      const arrow = document.getElementById('aquarium-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleFerrisWheelFacts() {
+      const content = document.getElementById('ferriswheel-facts-content');
+      const arrow = document.getElementById('ferriswheel-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleNambaFacts() {
+      const content = document.getElementById('namba-facts-content');
+      const arrow = document.getElementById('namba-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleOkonomiyakiFacts() {
+      const content = document.getElementById('okonomiyaki-facts-content');
+      const arrow = document.getElementById('okonomiyaki-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function toggleUmedaFacts() {
+      const content = document.getElementById('umeda-facts-content');
+      const arrow = document.getElementById('umeda-arrow');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+
+  </script>
+</body>
+</html>

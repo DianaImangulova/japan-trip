@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 3 - Modern Tokyo Culture | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/harajuku-street.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 3</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 25</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Modern Tokyo Culture
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Harajuku & Shibuya Experience</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">📍 Harajuku & Shibuya</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-3-overview">
+      <h2>Today's Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">Visit <a href="#meiji-section" style="color: #10b981; text-decoration: none;">Meiji Shrine</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ec4899;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">Explore <a href="#harajuku-section" style="color: #ec4899; text-decoration: none;">Harajuku & Takeshita Street</a></div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">Try <a href="#purikura-section" style="color: #f59e0b; text-decoration: none;">Purikura Photo Booth!</a> </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                ">See <a href="#shibuya-section" style="color: #3b82f6; text-decoration: none;">Shibuya Crossing & Sky</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #ec4899, #f59e0b);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Meiji Shrine Container -->
+  <div class="container">
+    <section id="meiji-section">
+      <h2>Meiji Shrine</h2>
+      <br><br>
+      <img src="assets/meiji-shrine.jpg" alt="Meiji Shrine, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <a href="https://www.meijijingu.or.jp/en/"><strong>Meiji Shrine</strong></a> is Tokyo's most important Shinto shrine, dedicated to Emperor Meiji and Empress Shoken. Nestled in a 175-acre forest in the heart of Tokyo, this peaceful sanctuary offers a spiritual escape from the bustling city.
+        </p>
+        <p class="highlight-intro">
+          Built in 1920, the shrine is surrounded by over 100,000 trees donated from all over Japan. It's one of the most popular places for traditional Japanese wedding ceremonies and New Year's prayers, attracting millions of visitors annually.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo</li>
+          <li>🕐 Opening hours: 6:10 AM - 4:10 PM (in November)</li>
+          <li>💰 Admission: Free (Inner Garden: ¥500)</li>
+          <li>🚇 Station: Harajuku Station (JR Yamanote Line) or Meiji-jingu-mae Station</li>
+        </ul>
+      </div>
+
+      <!-- Shrine Highlights -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleMeijiFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Shrine Significance & Traditions</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="meiji-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="meiji-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👑</span>
+                  Emperor Meiji Legacy
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Emperor Meiji (1852-1912) led Japan's transformation from a feudal society to a modern nation. The shrine honors his role in the Meiji Restoration, which opened Japan to the world and modernized the country.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌳</span>
+                  Sacred Forest
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The forest was artificially created from donated trees from across Japan and around the world. Today it's home to over 120 species of trees and serves as a green lung in central Tokyo.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎋</span>
+                  Ema Wish Plaques
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Write your wishes on wooden ema plaques and hang them at the shrine. Popular wishes include good health, success in studies, and finding love. The shrine receives thousands of ema daily.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💒</span>
+                  Traditional Weddings
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  One of Japan's most popular wedding venues. You might witness traditional Shinto wedding processions with brides in beautiful white shiromuku kimono and grooms in formal hakama.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎌</span>
+                  New Year Hatsumode
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Japan's most popular shrine for New Year's first prayer (hatsumode), attracting over 3 million visitors during the first three days of January. The crowds are massive but the atmosphere is magical.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Harajuku & Takeshita Street Container -->
+  <div class="container">
+    <section id="harajuku-section">
+      <h2>Harajuku & Takeshita Street</h2>
+      <br><br>
+      <img src="assets/takeshita-street.jpg" alt="Takeshita Street, Harajuku" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Harajuku</strong> is Tokyo's epicenter of youth culture and fashion creativity. From kawaii (cute) culture to cosplay, this vibrant district showcases Japan's most innovative and colorful street styles.
+        </p>
+        
+        <p class="highlight-intro">
+          <strong>Takeshita Street</strong> is the heart of Harajuku - a narrow, pedestrian-only street packed with trendy shops, quirky cafes, and unique fashion boutiques. It's where Tokyo's teenage fashion trends are born and where creativity knows no bounds.
+        </p>
+      </div>
+
+      <div class="shopping-highlights">
+        <h3>Must-Visit Spots & Activities</h3>
+        <div class="shopping-grid">
+          <div class="shop-item">
+            <h4>🛍️ Shopping Hotspots</h4>
+            <ul>
+              <li><strong>6%DOKIDOKI:</strong> Colorful kawaii accessories and clothing</li>
+              <li><strong>Chicago Thrift Store:</strong> Vintage American clothing</li>
+              <li><strong>Converse Flagship:</strong> Exclusive sneaker designs</li>
+              <li><strong>Angel Heart:</strong> Gothic Lolita fashion</li>
+              <li><strong>Daiso:</strong> 100-yen store with unique Japanese items</li>
+            </ul>
+          </div>
+          <div class="shop-item">
+            <h4>🍭 Sweet Treats</h4>
+            <ul>
+              <li><strong>Rainbow Cotton Candy:</strong> Instagram-famous colorful floss</li>
+              <li><strong>Marion Crepes:</strong> Harajuku's original crepe shop</li>
+              <li><strong>Garrett Popcorn:</strong> Gourmet flavored popcorn</li>
+              <li><strong>Soft Cream Heaven:</strong> Unique Japanese ice cream flavors</li>
+              <li><strong>Character Cafes:</strong> Hello Kitty, Pokemon themed eateries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Harajuku Culture Facts -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleHarajukuFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(236,72,153,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Harajuku Culture & Fashion</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="harajuku-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="harajuku-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌈</span>
+                  Kawaii Culture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  "Kawaii" (cute) culture originated in Harajuku and spread worldwide. It's not just about looking cute - it's a lifestyle celebrating innocence, playfulness, and rejecting traditional adult seriousness.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👘</span>
+                  Fashion Subcultures
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Harajuku is home to unique fashion styles: Decora (colorful accessories), Gothic Lolita (Victorian-inspired), Fairy Kei (pastel fantasy), and Visual Kei (dramatic makeup and clothes).
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">📱</span>
+                  Instagram Paradise
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Every corner of Takeshita Street is designed for social media. From neon signs to rainbow foods, the entire area is crafted to create the perfect Instagram shot.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #ec4899;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #ec4899;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎭</span>
+                  Street Performers
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  On weekends, talented street performers entertain crowds with music, dance, and cosplay. Many famous Japanese pop stars got their start performing on Harajuku streets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Purikura Photo Booth Container -->
+  <div class="container">
+    <section id="purikura-section">
+      <h2>Purikura Photo Booth Fun</h2>
+      <br><br>
+      <img src="assets/purikura-booth.jpg" alt="Purikura photo booth experience" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Purikura</strong> (print club) are decorated photo booths that have been a Japanese obsession since the 1990s. These high-tech machines take photos and let you edit them with digital decorations, creating uniquely Japanese keepsakes.
+        </p>
+        
+        <p class="highlight-intro">
+          In Harajuku, purikura arcades are everywhere, offering the latest machines with advanced beauty filters, AR effects, and endless customization options. It's a quintessential Tokyo youth culture experience!
+        </p>
+      </div>
+
+      <!-- Purikura Guide -->
+      <div class="purikura-guide" style="background:#fef3c7; padding:2rem; border-radius:16px; margin:2rem 0; border-left:4px solid #f59e0b;">
+        <h3 style="color:#92400e; margin:0 0 1.5rem;">📸 How to Use Purikura</h3>
+        <div class="step-grid" style="display:grid; gap:1.5rem;">
+          <div class="step" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Step 1: Choose Your Machine</h4>
+            <p style="margin:0; color:#374151;">Pick from hundreds of different themed machines. Popular ones have longer queues but offer the latest effects.</p>
+          </div>
+          
+          <div class="step" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Step 2: Take Photos (3-5 minutes)</h4>
+            <p style="margin:0; color:#374151;">Strike poses and follow the machine's instructions. It usually takes 16 photos automatically with different backgrounds.</p>
+          </div>
+          
+          <div class="step" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Step 3: Edit & Decorate (10 minutes)</h4>
+            <p style="margin:0; color:#374151;">Add text, stamps, frames, and digital makeup. This is the fun creative part where you can go wild!</p>
+          </div>
+          
+          <div class="step" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Step 4: Print & Share</h4>
+            <p style="margin:0; color:#374151;">Collect your printed stickers and save digital copies to your phone via QR code.</p>
+          </div>
+        </div>
+        
+        <div style="margin-top:1.5rem; padding:1rem; background:rgba(245,158,11,0.1); border-radius:8px;">
+          <strong style="color:#92400e;">Pro Tips:</strong>
+          <ul style="margin:0.5rem 0 0; color:#6b7280;">
+            <li>Bring coins - most machines only accept cash</li>
+            <li>Groups of 2-4 work best</li>
+            <li>Don't rush the editing phase - it's the most fun part!</li>
+            <li>Popular machines in Takeshita Street: Big Bang, Love Berry, Princess Deco</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Shibuya Crossing & Sky Container -->
+  <div class="container">
+    <section id="shibuya-section">
+      <h2>Shibuya Crossing & Shibuya Sky</h2>
+      <br><br>
+      <img src="assets/shibuya-crossing.jpg" alt="Shibuya Crossing, Tokyo" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Shibuya Crossing</strong> is the world's busiest pedestrian intersection, where up to 3,000 people cross simultaneously during rush hour. This iconic scramble crossing has become a symbol of Tokyo's energy and urban intensity.
+        </p>
+        
+        <p class="highlight-intro">
+          <strong>Shibuya Sky</strong> is the newest observation deck offering stunning 360-degree views of Tokyo from 230 meters high. The rooftop experience provides the perfect aerial view of the famous crossing below and Tokyo's endless skyline.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>📍 Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Shibuya District, Tokyo</li>
+          <li>🕐 Shibuya Sky hours: 9:00 AM - 11:00 PM (last entry 10:30 PM)</li>
+          <li>💰 Shibuya Sky admission: ¥2,000 adults</li>
+          <li>🚇 Station: Shibuya Station (JR, Metro, Private lines)</li>
+          <li>⏱️ Recommended time: 2-3 hours including Sky visit</li>
+        </ul>
+      </div>
+
+      <!-- Shibuya Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShibuyaFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(59,130,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Shibuya Experience & Views</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shibuya-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shibuya-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🚶</span>
+                  The Crossing Experience
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Best experienced during rush hours (8-9 AM, 6-7 PM) when up to 3,000 people cross simultaneously. The organized chaos is mesmerizing - despite the crowds, people rarely bump into each other.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏢</span>
+                  Shibuya Sky Observatory
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The 230-meter high rooftop observatory offers unobstructed 360° views. Watch the crossing from above, spot Mount Fuji on clear days, and enjoy spectacular sunset and night views of Tokyo.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🐕</span>
+                  Hachiko Memorial
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Visit the statue of Hachiko, the loyal dog who waited for his deceased owner every day for 10 years. This meeting spot has become a symbol of loyalty and love in Japanese culture.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">📺</span>
+                  Center Gai & Shopping
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Explore Center Gai, Shibuya's vibrant shopping street filled with fashion stores, karaoke boxes, game arcades, and restaurants. It's where Tokyo's youth culture comes alive.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌃</span>
+                  Best Photo Spots
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  • Shibuya Sky rooftop for aerial crossing views<br>
+                  • Starbucks overlooking crossing (2nd floor)<br>
+                  • Mag's Park rooftop (free alternative view)<br>
+                  • Inside the crossing during rush hour<br>
+                  • Hachiko statue for classic Tokyo photos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day2.html">⬅ Back to Day 2</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day4.html">Go to Day 4 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 3 activities! Amazing modern Tokyo culture experience!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleMeijiFacts() {
+      toggleDropdown('meiji-facts-content', 'meiji-arrow');
+    }
+
+    function toggleHarajukuFacts() {
+      toggleDropdown('harajuku-facts-content', 'harajuku-arrow');
+    }
+
+    function toggleShibuyaFacts() {
+      toggleDropdown('shibuya-facts-content', 'shibuya-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+</script>
+
+  <!-- Add this CSS to handle mobile responsiveness -->
+  <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important;
+      margin-top: 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      border-radius: 20px !important;
+    }
+    
+    .day-number {
+      font-size: 0.8rem !important;
+    }
+    
+    .day-date {
+      font-size: 0.7rem !important;
+      padding-left: 0.5rem !important;
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .day-page-header {
+      min-height: 50vh !important;
+      padding-top: 120px !important;
+    }
+    
+    .day-hero {
+      padding: 0.5rem !important;
+      padding-top: 1.5rem !important;
+    }
+    
+    .day-badge {
+      margin-top: 1.5rem !important;
+      padding: 0.25rem 0.6rem !important;
+      gap: 0.4rem !important;
+      border-radius: 15px !important;
+    }
+    
+    .day-number {
+      font-size: 1rem !important;
+    }
+    
+    .day-date {
+      font-size: 1rem !important;
+      padding-left: 0.4rem !important;
+    }
+    
+    .location {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .day-title {
+      font-size: 2.2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .day-subtitle {
+      font-size: 1.1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  /* Purikura guide responsive styling */
+  @media (max-width: 768px) {
+    .step-grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .shopping-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  /* Remove the fixed background from body for this page */
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>

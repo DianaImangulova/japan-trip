@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 8 - Osaka Culture & Castle | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/osaka-main.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 8</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 30</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Osaka Castle & Culture
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Historic Landmarks & Local Neighborhoods</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏰 Historic Castle</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">⛩️ Traditional Culture</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-8-overview">
+      <h2>Highlights</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#castle-section" style="color: #10b981; text-decoration: none;">Osaka Castle & Park</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Iconic reconstructed castle with panoramic city views</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #dc2626;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#sumiyoshi-section" style="color: #dc2626; text-decoration: none;">Sumiyoshi Taisha Shrine</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">One of Japan's oldest Shinto shrines with unique architecture</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#shinsekai-section" style="color: #f59e0b; text-decoration: none;">Shinsekai District</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Retro neighborhood with kushikatsu restaurants and Tsutenkaku Tower</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #8b5cf6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#bunraku-section" style="color: #8b5cf6; text-decoration: none;">National Bunraku Theatre</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Traditional puppet theater - Japan's UNESCO cultural heritage</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #10b981, #8b5cf6);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Osaka Castle Container -->
+  <div class="container">
+    <section id="castle-section">
+      <h2>Osaka Castle</h2>
+      <br><br>
+      <img src="assets/osaka-castle-main.jpg" alt="Osaka Castle" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Osaka Castle</strong> is one of Japan's most famous landmarks and a symbol of Osaka. Originally built in 1583 by Toyotomi Hideyoshi, the current reconstruction offers stunning views and fascinating history.
+        </p>
+        
+        <p class="highlight-intro">
+          The castle sits in beautiful Osaka Castle Park, surrounded by moats and featuring over 600 cherry trees. The museum inside houses artifacts from the castle's turbulent history and Japan's unification period.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏰 Castle Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Osaka Castle Park, Chuo Ward</li>
+          <li>🕐 Hours: 9:00 AM - 5:00 PM (last entry 4:30 PM)</li>
+          <li>💰 Admission: ¥600 adults</li>
+          <li>🚇 Access: Osakajokoen Station (5-minute walk)</li>
+          <li>🌸 Best views: 8th floor observation deck</li>
+        </ul>
+      </div>
+
+      <!-- Castle Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleCastleFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Castle History & Architecture</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="castle-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="castle-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⚔️</span>
+                  Toyotomi Hideyoshi's Legacy
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Built by the powerful daimyo who unified Japan, the castle represented the pinnacle of power in 16th century Japan. Its massive stone walls and multiple defensive layers made it nearly impregnable.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏗️</span>
+                  Modern Reconstruction
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Rebuilt in 1931 with modern materials, the current castle houses a museum with historical artifacts, samurai armor, and interactive exhibits about feudal Japan and the Siege of Osaka.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌸</span>
+                  Cherry Blossom Paradise
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Osaka Castle Park is one of Japan's most popular hanami spots with over 600 cherry trees. During blooming season, the pink petals create a stunning contrast against the white castle walls.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Sumiyoshi Taisha Container -->
+  <div class="container">
+    <section id="sumiyoshi-section">
+      <h2>Sumiyoshi Taisha Shrine</h2>
+      <br><br>
+      <img src="assets/sumiyoshi-taisha.jpg" alt="Sumiyoshi Taisha Shrine" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Sumiyoshi Taisha</strong> is one of Japan's oldest and most important Shinto shrines, with over 1,800 years of history. It's famous for its unique architectural style that predates Chinese influence on Japanese temple design.
+        </p>
+        
+        <p class="highlight-intro">
+          The shrine complex features distinctive curved bridges, vermillion buildings, and ancient trees. It's dedicated to sea gods and has been protecting sailors and travelers for centuries.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>⛩️ Shrine Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Sumiyoshi Ward, Osaka</li>
+          <li>🕐 Hours: 6:00 AM - 5:00 PM (grounds always open)</li>
+          <li>💰 Admission: Free</li>
+          <li>🚋 Access: Sumiyoshi-taisha Station (3-minute walk)</li>
+          <li>🎋 Special: Pure Japanese architectural style</li>
+        </ul>
+      </div>
+
+      <!-- Shrine Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShrineFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(220,38,38,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Ancient Shinto Traditions</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shrine-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shrine-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏛️</span>
+                  Pure Japanese Architecture
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The shrine's architecture represents pure Japanese design from before Chinese influence. The buildings feature straight rooflines, raised floors, and natural wood construction without paint or lacquer.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌊</span>
+                  Sea God Protection
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Dedicated to the three sea gods who protect sailors and travelers, the shrine has been blessing journeys for over 1,800 years. Many pray here for safe travels and successful voyages.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #dc2626;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #dc2626;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌉</span>
+                  Famous Sorihashi Bridge
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The distinctive curved bridge leads to the main shrine and is said to purify visitors as they cross. The steep arch represents the connection between the earthly and divine realms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Shinsekai District Container -->
+  <div class="container">
+    <section id="shinsekai-section">
+      <h2>Shinsekai District</h2>
+      <br><br>
+      <img src="assets/shinsekai-district.jpg" alt="Shinsekai District" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Shinsekai (New World)</strong> is Osaka's retro entertainment district, famous for kushikatsu restaurants, vintage arcade games, and the iconic Tsutenkaku Tower. It perfectly captures old Osaka's working-class spirit.
+        </p>
+        
+        <p class="highlight-intro">
+          Built in the early 1900s to showcase "the world of the future," Shinsekai now feels charmingly nostalgic. The neon signs, vintage pachinko parlors, and traditional eateries create a unique atmosphere found nowhere else.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏮 District Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Naniwa Ward, around Tsutenkaku Tower</li>
+          <li>🕐 Best time: Evening for neon lights and dinner</li>
+          <li>🍢 Famous for: Kushikatsu (fried skewers)</li>
+          <li>🚇 Access: Shinsekai Station or Dobutsuen-mae Station</li>
+          <li>🎮 Features: Vintage arcade games and pachinko parlors</li>
+        </ul>
+      </div>
+
+      <!-- Shinsekai Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShinsekaiFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Retro Osaka Culture</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shinsekai-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shinsekai-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍢</span>
+                  Kushikatsu Rules
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The famous kushikatsu (fried skewers) come with one important rule: "No double dipping!" The shared sauce is communal, so dip once and enjoy. Try vegetables, meat, and seafood varieties.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🗼</span>
+                  Tsutenkaku Tower
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The 103-meter tower is Shinsekai's symbol, offering panoramic city views. The billiken statue inside is said to bring good luck when you rub its feet - a popular local tradition.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎮</span>
+                  Retro Gaming Heaven
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Vintage arcade games, pachinko parlors, and old-school entertainment venues line the streets. It's a nostalgic playground for adults and a fascinating glimpse into Japan's entertainment history.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Bunraku Theatre Container -->
+  <div class="container">
+    <section id="bunraku-section">
+      <h2>National Bunraku Theatre</h2>
+      <br><br>
+      <img src="assets/bunraku-theatre.jpg" alt="Bunraku puppet theater" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Bunraku</strong> is traditional Japanese puppet theater that originated in Osaka and is recognized by UNESCO as a Masterpiece of Oral and Intangible Heritage. This highly sophisticated art form combines storytelling, music, and intricate puppetry.
+        </p>
+        
+        <p class="highlight-intro">
+          Each puppet is operated by three skilled puppeteers working in perfect harmony. Combined with shamisen music and dramatic narration, bunraku creates an emotionally powerful theatrical experience that has captivated audiences for over 400 years.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🎭 Theatre Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Chuo Ward, near Osaka Castle</li>
+          <li>🕐 Performance times: Vary by season (check schedule)</li>
+          <li>💰 Tickets: ¥4,000-8,000 (depending on seats)</li>
+          <li>🚇 Access: Nipponbashi Station (8-minute walk)</li>
+          <li>🎫 Booking: Advance reservations recommended</li>
+        </ul>
+      </div>
+
+      <!-- Bunraku Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleBunrakuFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(139,92,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Traditional Puppet Theater Art</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="bunraku-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="bunraku-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👥</span>
+                  Three-Person Puppetry
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Each puppet requires three operators: the main puppeteer controls the head and right arm, while two assistants manage the left arm and legs. They train for decades to achieve perfect synchronization.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎵</span>
+                  Musical Narration
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  A single narrator (tayu) voices all characters while a shamisen player provides musical accompaniment. The narrator's skill in changing voices and conveying emotion is crucial to the performance.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏛️</span>
+                  UNESCO Recognition
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Recognized as a UNESCO Intangible Cultural Heritage, bunraku represents the pinnacle of puppet theater art. Many consider it equal to kabuki and noh as one of Japan's three classical theater forms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Start early at Osaka Castle to avoid crowds and get the best photos</li>
+          <li>Sumiyoshi Taisha is great for experiencing pure Japanese architecture</li>
+          <li>Try kushikatsu in Shinsekai - remember the no double-dipping rule!</li>
+          <li>Check bunraku performance schedule in advance for tickets</li>
+          <li>Wear comfortable shoes for walking between historical sites</li>
+          <li>Bring cash - many traditional establishments don't accept cards</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day7.html">⬅ Back to Day 7</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day9.html">Go to Day 9 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 8 activities! Enjoy exploring Osaka\'s rich culture and history!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleCastleFacts() {
+      toggleDropdown('castle-facts-content', 'castle-arrow');
+    }
+
+    function toggleShrineFacts() {
+      toggleDropdown('shrine-facts-content', 'shrine-arrow');
+    }
+
+    function toggleShinsekaiFacts() {
+      toggleDropdown('shinsekai-facts-content', 'shinsekai-arrow');
+    }
+
+    function toggleBunrakuFacts() {
+      toggleDropdown('bunraku-facts-content', 'bunraku-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+  </script>
+
+  <!-- Add this CSS to handle mobile responsiveness -->
+  <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important;
+      margin-top: 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      border-radius: 20px !important;
+    }
+    
+    .day-number {
+      font-size: 0.8rem !important;
+    }
+    
+    .day-date {
+      font-size: 0.7rem !important;
+      padding-left: 0.5rem !important;
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .day-page-header {
+      min-height: 50vh !important;
+      padding-top: 120px !important;
+    }
+    
+    .day-hero {
+      padding: 0.5rem !important;
+      padding-top: 1.5rem !important;
+    }
+    
+    .day-badge {
+      margin-top: 1.5rem !important;
+      padding: 0.25rem 0.6rem !important;
+      gap: 0.4rem !important;
+      border-radius: 15px !important;
+    }
+    
+    .day-number {
+      font-size: 1rem !important;
+    }
+    
+    .day-date {
+      font-size: 1rem !important;
+      padding-left: 0.4rem !important;
+    }
+    
+    .location, .weather {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .day-title {
+      font-size: 2.2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .day-subtitle {
+      font-size: 1.1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  /* Remove the fixed background from body for this page */
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>

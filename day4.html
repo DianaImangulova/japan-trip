@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 4 - Journey to Hakone | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hakone-mountains.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 4</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 26</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Journey to Hakone
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Mountain Retreat & Hot Springs</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏔️ Hakone Mountain Resort</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">♨️ Onsen Experience</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Train Journey Container -->
+  <div class="container">
+    <section id="travel-section">
+      <h2>Train Journey to Hakone</h2>
+      <br><br>
+      <img src="assets/romance-car.jpg" alt="Odakyu Romance Car to Hakone" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>The Odakyu Romance Car</strong> is Japan's most scenic train route to Hakone. This comfortable express train offers panoramic windows and reserved seating for the 85-minute journey through beautiful countryside.
+        </p>
+        
+        <p class="highlight-intro">
+          Departing from Shinjuku, the train winds through residential Tokyo, suburban landscapes, and finally into the mountainous Hakone region. On clear days, you'll catch glimpses of Mount Fuji during the journey.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🚅 Journey Details</h3>
+        <ul class="location-info">
+          <li>🚉 Departure: Shinjuku Station (Odakyu Line)</li>
+          <li>🎯 Destination: Hakone-Yumoto Station</li>
+          <li>⏱️ Journey time: 85 minutes direct</li>
+          <li>💰 Cost: ¥1,190 + ¥320 Romance Car surcharge</li>
+          <li>🎫 Reservation: Recommended, especially weekends</li>
+        </ul>
+      </div>
+
+      <!-- Travel Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleTravelFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(59,130,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Romance Car Experience</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="travel-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="travel-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🪟</span>
+                  Panoramic Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Large windows offer stunning views of the Japanese countryside. Watch urban Tokyo transform into rural landscapes, with rice fields, forests, and mountain vistas unfolding along the way.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🗻</span>
+                  Mount Fuji Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  On clear days, Mount Fuji becomes visible as you approach Hakone. The best views are from the right side of the train (when facing forward). Early morning journeys offer the clearest mountain views.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛋️</span>
+                  Comfort Features
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Reserved seating with extra legroom, individual reading lights, and onboard café service. Some cars feature observation decks and special viewing seats designed for sightseeing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Yoshiike Ryokan Container -->
+  <div class="container">
+    <section id="ryokan-section">
+      <h2>Yoshiike Ryokan</h2>
+      <br><br>
+      <img src="assets/yoshiike-ryokan.jpg" alt="Yoshiike Ryokan, Hakone" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Yoshiike Ryokan</strong> is a traditional Japanese inn offering an authentic ryokan experience in the heart of Hakone. With its historic architecture, tatami-mat rooms, and warm hospitality, it provides the perfect introduction to Japanese inn culture.
+        </p>
+        
+        <p class="highlight-intro">
+          Located in Hakone-Yumoto, this family-run ryokan has been welcoming guests for generations. The property features natural hot spring baths, traditional kaiseki dining, and beautifully appointed rooms overlooking Japanese gardens.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏮 Ryokan Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Hakone-Yumoto, Hakone</li>
+          <li>🛁 Features: Natural onsen hot springs</li>
+          <li>🍱 Dining: Traditional kaiseki cuisine</li>
+          <li>🚶 From station: 5-minute walk from Hakone-Yumoto</li>
+          <li>🌸 Garden: Traditional Japanese landscaping</li>
+        </ul>
+      </div>
+
+      <!-- Ryokan Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleRyokanFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Traditional Ryokan Experience</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="ryokan-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="ryokan-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏠</span>
+                  Tatami Rooms
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Sleep on traditional futon bedding laid out on tatami mat floors. Rooms feature sliding shoji screens, low wooden tables, and views of carefully maintained Japanese gardens.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🍱</span>
+                  Kaiseki Dining
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Experience multi-course kaiseki cuisine featuring seasonal local ingredients. Meals are served in your room or private dining areas, presenting food as both nourishment and art.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">👘</span>
+                  Yukata Experience
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Wear traditional yukata robes provided by the ryokan. These cotton robes are perfect for relaxing, visiting the onsen, and strolling through the gardens in traditional style.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎋</span>
+                  Omotenashi Service
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Experience "omotenashi" - Japanese hospitality that anticipates your needs. Staff provide attentive, respectful service that makes every guest feel like honored family.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Tenzan Onsen Container -->
+  <div class="container">
+    <section id="onsen-section">
+      <h2>Tenzan Onsen</h2>
+      <br><br>
+      <img src="assets/tenzan-onsen.jpg" alt="Tenzan Onsen hot springs" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Tenzan Onsen</strong> is one of Hakone's most beloved hot spring resorts, offering outdoor and indoor baths fed by natural volcanic springs. Set in a forested valley, it provides the quintessential Japanese onsen experience.
+        </p>
+        
+        <p class="highlight-intro">
+          The mineral-rich waters are said to have healing properties, perfect for relaxing tired muscles after your journey. With multiple bath types and stunning natural surroundings, Tenzan offers the perfect introduction to onsen culture.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>♨️ Onsen Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 208 Yugawara, Hakone</li>
+          <li>🕐 Hours: 9:00 AM - 9:00 PM (last entry 8:30 PM)</li>
+          <li>💰 Admission: ¥1,300 adults</li>
+          <li>🚌 Access: 10 minutes by bus from Hakone-Yumoto Station</li>
+          <li>🛁 Features: Indoor & outdoor baths, mountain views</li>
+        </ul>
+      </div>
+
+      <!-- Onsen Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleOnsenFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Onsen Experience & Etiquette</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="onsen-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="onsen-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🧴</span>
+                  Onsen Etiquette
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Always wash thoroughly before entering the baths. Use the provided stools and shower areas to clean yourself completely. Keep your towel out of the hot spring water - use it to cover yourself when walking around.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💎</span>
+                  Healing Waters
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Tenzan's alkaline waters are rich in minerals that are said to soften skin, improve circulation, and relieve muscle tension. The water temperature ranges from 38°C to 42°C across different baths.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌲</span>
+                  Outdoor Rotenburo
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The outdoor baths (rotenburo) offer stunning views of the surrounding forest and mountains. Especially magical in autumn with colorful leaves or winter with snow-covered trees.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⏰</span>
+                  Best Times to Visit
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Early morning or late afternoon offer the most peaceful experience. Sunset baths in the outdoor pools are particularly magical, with golden light filtering through the forest canopy.
+                </p>
+              </div>
+            </div>
+
+            <!-- Onsen Guide -->
+            <div style="
+              margin-top: 2rem;
+              padding: 1.5rem;
+              background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+              border-radius: 12px;
+              border: 2px dashed #e9ecef;
+            ">
+              <h4 style="
+                color: var(--ink);
+                margin: 0 0 1rem;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              ">
+                <span style="font-size: 1.2rem;">📝</span>
+                Onsen Quick Guide
+              </h4>
+              <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                font-size: 0.9rem;
+              ">
+                <div><strong>Step 1:</strong> Remove all clothing in changing room</div>
+                <div><strong>Step 2:</strong> Wash thoroughly at shower stations</div>
+                <div><strong>Step 3:</strong> Enter bath slowly, start with cooler water</div>
+                <div><strong>Step 4:</strong> Keep towel out of bath water</div>
+                <div><strong>Step 5:</strong> Stay hydrated, limit time to 15-20 minutes</div>
+                <div><strong>Step 6:</strong> Rinse off before leaving (optional)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive Google Map -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Book Romance Car seats in advance, especially on weekends</li>
+          <li>Pack light clothes for onsen visit (towels provided)</li>
+          <li>Bring cash - many Hakone establishments don't accept cards</li>
+          <li>Check ryokan check-in time (usually 3:00-4:00 PM)</li>
+          <li>Tenzan Onsen provides towels and toiletries</li>
+          <li>Respect onsen etiquette - it's a sacred ritual in Japan</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day3.html">⬅ Back to Day 3</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day5.html">Go to Day 5 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 4 activities! Enjoy your peaceful Hakone retreat!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleTravelFacts() {
+      toggleDropdown('travel-facts-content', 'travel-arrow');
+    }
+
+    function toggleRyokanFacts() {
+      toggleDropdown('ryokan-facts-content', 'ryokan-arrow');
+    }
+
+    function toggleOnsenFacts() {
+      toggleDropdown('onsen-facts-content', 'onsen-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+</script>
+
+  <!-- Add this CSS to handle mobile responsiveness -->
+  <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important;
+      margin-top: 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      border-radius: 20px !important;
+    }
+    
+    .day-number {
+      font-size: 0.8rem !important;
+    }
+    
+    .day-date {
+      font-size: 0.7rem !important;
+      padding-left: 0.5rem !important;
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .day-page-header {
+      min-height: 50vh !important;
+      padding-top: 120px !important;
+    }
+    
+    .day-hero {
+      padding: 0.5rem !important;
+      padding-top: 1.5rem !important;
+    }
+    
+    .day-badge {
+      margin-top: 1.5rem !important;
+      padding: 0.25rem 0.6rem !important;
+      gap: 0.4rem !important;
+      border-radius: 15px !important;
+    }
+    
+    .day-number {
+      font-size: 1rem !important;
+    }
+    
+    .day-date {
+      font-size: 1rem !important;
+      padding-left: 0.4rem !important;
+    }
+    
+    .location, .weather {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .day-title {
+      font-size: 2.2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .day-subtitle {
+      font-size: 1.1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  /* Remove the fixed background from body for this page */
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>

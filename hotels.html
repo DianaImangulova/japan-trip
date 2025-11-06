@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Hotels | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html" class="active">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header matching other pages -->
+  <header class="day-page-header" style="
+    margin-top: -70px;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/japan-hotels.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">
+    <div class="day-hero" style="
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      padding: 2rem;
+      z-index: 2;
+    ">
+      <div class="day-hero-content" style="
+        text-align: center;
+        background: none;
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      ">
+        
+        <h1 class="day-title" style="
+          font-size: clamp(2.5rem, 8vw, 5rem);
+          font-weight: 800;
+          margin-bottom: 0.8rem;
+          text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+          line-height: 1.1;
+          color: white;
+        ">
+        Our Hotels
+</h>
+    </div>
+  </header>
+
+  <!-- Map Section -->
+  <div class="container" style="margin: 4rem auto; max-width: 1200px; padding: 0 2rem;">
+    <section id="hotels-map">
+      <h2 style="text-align: center; margin-bottom: 2rem; color: #1f2937;"></h2>
+      <div class="map-container" style="
+        width: 100%;
+        height: 600px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        border: 1px solid #e5e7eb;
+        margin: 2rem 0;
+      ">
+        <iframe 
+          src="https://www.google.com/maps/d/u/0/embed?mid=1m7CJnxtzaPLq6k3nzkkFQfV19LpPsIY&ehbc=2E312F"
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>

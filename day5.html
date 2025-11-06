@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 5 - Hakone Exploration | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/lake-ashi.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 5</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 27</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Hakone Exploration
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Nature, Art & Scenic Beauty</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏔️ Lake Ashi & Mount Fuji</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🎨 Art & Culture</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-5-overview">
+      <h2>Today's Peaceful Journey</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#shrine-section" style="color: #3b82f6; text-decoration: none;">Hakone Shrine & Lake Ashi</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Visit the iconic red torii gate standing in Lake Ashi waters</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #8b5cf6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#museum-section" style="color: #8b5cf6; text-decoration: none;">Hakone Open-Air Museum</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Explore outdoor sculptures in stunning mountain setting</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#ropeway-section" style="color: #f59e0b; text-decoration: none;">Hakone Ropeway Adventure</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Soar above the volcanic valley with Mount Fuji views</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #10b981;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#owakudani-section" style="color: #10b981; text-decoration: none;">Owakudani Volcanic Valley</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Experience volcanic activity and try famous black eggs</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 4 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Hakone Shrine & Lake Ashi Container -->
+  <div class="container">
+    <section id="shrine-section">
+      <h2>Hakone Shrine & Lake Ashi</h2>
+      <br><br>
+      <img src="assets/hakone-shrine-torii.jpg" alt="Hakone Shrine red torii in Lake Ashi" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Hakone Shrine</strong> is famous for its iconic red torii gate standing majestically in the waters of Lake Ashi. This sacred Shinto shrine, founded in 757 AD, offers one of Japan's most photographed views with Mount Fuji as a backdrop.
+        </p>
+        
+        <p class="highlight-intro">
+          <strong>Lake Ashi</strong> is a stunning crater lake formed by volcanic activity 3,000 years ago. The lake's serene waters perfectly reflect the surrounding mountains and sky, creating picture-perfect moments throughout the day.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>⛩️ Essential Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 80-1 Motohakone, Hakone</li>
+          <li>🕐 Hours: Always open (best visited during daylight)</li>
+          <li>💰 Admission: Free</li>
+          <li>🚌 Access: Bus to Motohakone-ko stop</li>
+          <li>📸 Best photo time: Early morning or golden hour</li>
+        </ul>
+      </div>
+
+      <!-- Shrine & Lake Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleShrineFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(59,130,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Sacred Lake & Mountain Views</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="shrine-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="shrine-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⛩️</span>
+                  The Famous Torii
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The 18-meter tall vermillion torii appears to float on Lake Ashi's waters. Originally built in 1667, it marks the boundary between the physical and spiritual worlds. At high tide, it seems to rise from the lake itself.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🗻</span>
+                  Mount Fuji Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  On clear days, Mount Fuji provides a magnificent backdrop to the torii gate. Early morning hours (6-8 AM) offer the best visibility. The lake's calm waters create perfect reflections of both mountain and gate.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛶</span>
+                  Pirate Ship Cruises
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Take a replica pirate ship cruise across Lake Ashi for unique views of the torii from the water. The 30-minute journey offers panoramic mountain views and photo opportunities from different angles.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #3b82f6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #3b82f6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌸</span>
+                  Seasonal Beauty
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Each season offers different beauty: spring cherry blossoms, summer green forests, autumn maple colors, and winter snow-capped mountains. Late November features stunning autumn foliage around the lake.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Hakone Open-Air Museum Container -->
+  <div class="container">
+    <section id="museum-section">
+      <h2>Hakone Open-Air Museum</h2>
+      <br><br>
+      <img src="assets/hakone-open-air-museum.jpg" alt="Hakone Open-Air Museum sculptures" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Hakone Open-Air Museum</strong> is Japan's first outdoor sculpture museum, featuring over 120 masterpieces displayed against the stunning backdrop of Hakone's mountains. Art and nature blend seamlessly in this unique cultural experience.
+        </p>
+        
+        <p class="highlight-intro">
+          Founded in 1969, the museum showcases works by renowned artists including Picasso, Henry Moore, and Rodin. The 70,000 square meter park allows visitors to interact with art while enjoying the therapeutic benefits of nature.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🎨 Museum Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: 1121 Ninotaira, Hakone</li>
+          <li>🕐 Hours: 9:00 AM - 5:00 PM (last entry 4:30 PM)</li>
+          <li>💰 Admission: ¥1,600 adults</li>
+          <li>🚃 Access: 2 minutes walk from Chokoku-no-Mori Station</li>
+          <li>🎫 Special: Picasso Pavilion included in admission</li>
+        </ul>
+      </div>
+
+      <!-- Museum Highlights -->
+      <div class="museum-highlights" style="background:#fef3c7; padding:2rem; border-radius:16px; margin:2rem 0; border-left:4px solid #f59e0b;">
+        <h3 style="color:#92400e; margin:0 0 1.5rem;">🎨 Must-See Artworks</h3>
+        <div class="highlight-grid" style="display:grid; gap:1.5rem;">
+          <div class="highlight-item" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">The Picasso Pavilion</h4>
+            <p style="margin:0; color:#374151;">World's largest collection of Picasso ceramics, sculptures, and paintings housed in a stunning geometric building.</p>
+          </div>
+          
+          <div class="highlight-item" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Symphonic Sculpture</h4>
+            <p style="margin:0; color:#374151;">A towering stained glass tower you can climb inside, offering panoramic views of the Hakone mountains.</p>
+          </div>
+          
+          <div class="highlight-item" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Foot Bath Art Court</h4>
+            <p style="margin:0; color:#374151;">Relax in natural hot spring foot baths while surrounded by beautiful sculptures and mountain views.</p>
+          </div>
+          
+          <div class="highlight-item" style="background:white; padding:1rem; border-radius:8px;">
+            <h4 style="color:#f59e0b; margin:0 0 0.5rem;">Children's Playground Art</h4>
+            <p style="margin:0; color:#374151;">Interactive art installations where visitors can play and climb, blending fun with artistic appreciation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Museum Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleMuseumFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(139,92,246,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Art in Nature Experience</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="museum-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="museum-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌿</span>
+                  Art & Nature Harmony
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Sculptures are strategically placed to complement the natural landscape. Seasons change the artwork's appearance as foliage and lighting shift throughout the year.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🎭</span>
+                  Interactive Experiences
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Unlike traditional museums, visitors can touch, climb, and interact with many artworks. The museum encourages a hands-on approach to art appreciation.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #8b5cf6;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #8b5cf6;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">♨️</span>
+                  Art Therapy
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The combination of art, nature, and hot spring foot baths creates a therapeutic environment. Many visitors report feeling relaxed and inspired by the experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Hakone Ropeway Container -->
+  <div class="container">
+    <section id="ropeway-section">
+      <h2>Hakone Ropeway Adventure</h2>
+      <br><br>
+      <img src="assets/hakone-ropeway.jpg" alt="Hakone Ropeway cable car over volcanic valley" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Hakone Ropeway</strong> is one of Japan's most scenic cable car rides, soaring over the volcanic Owakudani Valley and offering spectacular views of Mount Fuji, Lake Ashi, and the surrounding mountains.
+        </p>
+        
+        <p class="highlight-intro">
+          The 4-kilometer journey takes you from Sounzan to Togendai, passing over active volcanic vents and sulfur springs. On clear days, the panoramic views are simply breathtaking, making it a must-do Hakone experience.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🚠 Ropeway Information</h3>
+        <ul class="location-info">
+          <li>📍 Route: Sounzan ↔ Owakudani ↔ Togendai</li>
+          <li>🕐 Hours: 9:00 AM - 5:00 PM (varies by season)</li>
+          <li>💰 Cost: ¥1,370 one way (Sounzan to Togendai)</li>
+          <li>⏱️ Journey time: 24 minutes total</li>
+          <li>🌤️ Weather dependent: Closed during strong winds</li>
+        </ul>
+      </div>
+
+      <!-- Ropeway Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleRopewayFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(245,158,11,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Sky-High Adventure</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="ropeway-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="ropeway-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🗻</span>
+                  Mount Fuji Panorama
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The highest point of the ropeway offers unobstructed views of Mount Fuji on clear days. Early morning rides provide the best visibility before clouds form around the mountain.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🌋</span>
+                  Volcanic Valley Views
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Soar directly over the active volcanic valley of Owakudani, where you can see steam rising from sulfur vents and the barren, lunar-like landscape created by volcanic activity.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #f59e0b;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #f59e0b;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">📸</span>
+                  Photography Tips
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Sit on the right side when heading to Owakudani for Mount Fuji views. The glass gondolas provide 360-degree visibility. Avoid touching the windows to prevent smudging for photos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Owakudani Volcanic Valley Container -->
+  <div class="container">
+    <section id="owakudani-section">
+      <h2>Owakudani Volcanic Valley</h2>
+      <br><br>
+      <img src="assets/owakudani-valley.jpg" alt="Owakudani volcanic valley with sulfur vents" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Owakudani Valley</strong> is an active volcanic zone created by a volcanic eruption 3,000 years ago. Known as the "Great Boiling Valley," it features dramatic sulfur vents, hot springs, and the famous black eggs cooked in the volcanic waters.
+        </p>
+        
+        <p class="highlight-intro">
+          The otherworldly landscape with its sulfur-yellow rocks, steaming vents, and constant volcanic activity offers a fascinating glimpse into the geological forces that shaped this region. It's said that eating one black egg extends your life by seven years!
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🌋 Valley Information</h3>
+        <ul class="location-info">
+          <li>📍 Location: Owakudani, Hakone</li>
+          <li>🕐 Hours: 9:00 AM - 5:00 PM</li>
+          <li>💰 Access: Via Hakone Ropeway</li>
+          <li>🥚 Black eggs: ¥500 for 5 eggs</li>
+          <li>⚠️ Note: May close due to volcanic activity levels</li>
+        </ul>
+      </div>
+
+      <!-- Black Egg Experience -->
+      <div class="black-egg-guide" style="background:#f0fdf4; padding:2rem; border-radius:16px; margin:2rem 0; border-left:4px solid #10b981;">
+        <h3 style="color:#047857; margin:0 0 1.5rem;">🥚 Famous Black Eggs</h3>
+        <div style="background:white; padding:1.5rem; border-radius:12px; margin-bottom:1rem;">
+          <h4 style="color:#10b981; margin:0 0 0.8rem;">How They're Made</h4>
+          <p style="margin:0; color:#374151; line-height:1.7;">
+            Regular chicken eggs are boiled in the naturally hot volcanic springs at 80°C for 60 minutes. The sulfur and iron in the water react with the eggshell, turning it completely black while the inside remains a normal white and yellow.
+          </p>
+        </div>
+        
+        <div style="background:white; padding:1.5rem; border-radius:12px; margin-bottom:1rem;">
+          <h4 style="color:#10b981; margin:0 0 0.8rem;">The Legend</h4>
+          <p style="margin:0; color:#374151; line-height:1.7;">
+            Local legend claims that eating one black egg adds seven years to your life. While scientifically unproven, the tradition has made these eggs one of Japan's most famous local delicacies.
+          </p>
+        </div>
+        
+        <div style="background:white; padding:1.5rem; border-radius:12px;">
+          <h4 style="color:#10b981; margin:0 0 0.8rem;">Taste & Experience</h4>
+          <p style="margin:0; color:#374151; line-height:1.7;">
+            Despite their dramatic appearance, black eggs taste exactly like regular hard-boiled eggs. The fun is in the unique experience and photo opportunity rather than any special flavor.
+          </p>
+        </div>
+      </div>
+
+      <!-- Volcanic Experience -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f3f4f6;
+        ">
+          <button class="facts-toggle enhanced" onclick="toggleVolcanicFacts()" style="
+            width: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+            color: white;
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          " onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(16,185,129,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+              <span>Volcanic Wonders</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span id="volcanic-arrow" style="
+                transition: transform 0.3s ease;
+                background: rgba(255,255,255,0.2);
+                padding: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+              ">▼</span>
+            </div>
+          </button>
+          
+          <div id="volcanic-facts-content" style="
+            display: none;
+            padding: 2rem 1.5rem;
+            background: white;
+            animation: fadeIn 0.3s ease-in-out;
+          ">
+            <div style="display: grid; gap: 1.8rem;">
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">💨</span>
+                  Active Sulfur Vents
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Steam continuously rises from dozens of vents throughout the valley. The sulfur smell is strong but not dangerous. The vents reach temperatures of over 100°C, hot enough to cook eggs!
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🏜️</span>
+                  Lunar Landscape
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The barren, rocky terrain colored by sulfur deposits creates an otherworldly atmosphere. The landscape is so unique that it's often compared to the surface of the moon or Mars.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">⚠️</span>
+                  Safety & Monitoring
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  Hakone's volcanic activity is constantly monitored. The area may close when volcanic gas levels rise too high. Stay on designated paths and follow all safety guidelines during your visit.
+                </p>
+              </div>
+
+              <div class="fact-item" style="
+                background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+                padding: 1.5rem;
+                border-radius: 12px;
+                border-left: 4px solid #10b981;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+              ">
+                <h4 style="
+                  color: #10b981;
+                  margin: 0 0 0.8rem;
+                  font-size: 1.1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                ">
+                  <span style="font-size: 1.3rem;">🛍️</span>
+                  Souvenir Shopping
+                </h4>
+                <p style="margin: 0; color: #374151; line-height: 1.7;">
+                  The visitor center offers unique volcanic-themed souvenirs including sulfur soaps, black egg-themed snacks, and geological specimens. Perfect for bringing home a piece of this unique experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Travel Tips -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day tips</h2>
+          <li>Start early (8-9 AM) for best Mount Fuji visibility</li>
+          <li>Check ropeway operation status - weather dependent</li>
+          <li>Wear layers - mountain weather changes quickly</li>
+          <li>Bring cash - many attractions don't accept cards</li>
+          <li>Allow 2-3 hours for the full ropeway experience</li>
+          <li>Download offline maps - cell service can be spotty</li>
+          <li>Pack snacks and water for the ropeway journey</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day4.html">⬅ Back to Day 4</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day6.html">Go to Day 6 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const totalItems = document.querySelectorAll('.checklist-item').length;
+      const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+      const progressPercent = (checkedItems / totalItems) * 100;
+      
+      const progressBar = document.getElementById('progress-bar');
+      const progressText = document.getElementById('progress-text');
+      
+      if (progressBar) {
+        progressBar.style.width = progressPercent + '%';
+      }
+      
+      if (progressText) {
+        progressText.textContent = `${checkedItems} of ${totalItems} completed`;
+      }
+      
+      if (checkedItems === totalItems && totalItems > 0) {
+        setTimeout(() => {
+          alert('🎉 Congratulations! You\'ve completed all Day 5 activities! What a perfect Hakone exploration day!');
+        }, 500);
+      }
+    }
+
+    // Dropdown toggle functions
+    function toggleShrineFacts() {
+      toggleDropdown('shrine-facts-content', 'shrine-arrow');
+    }
+
+    function toggleMuseumFacts() {
+      toggleDropdown('museum-facts-content', 'museum-arrow');
+    }
+
+    function toggleRopewayFacts() {
+      toggleDropdown('ropeway-facts-content', 'ropeway-arrow');
+    }
+
+    function toggleVolcanicFacts() {
+      toggleDropdown('volcanic-facts-content', 'volcanic-arrow');
+    }
+
+    function toggleDropdown(contentId, arrowId) {
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+      
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          content.style.display = 'none';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+</script>
+
+  <!-- Add this CSS to handle mobile responsiveness -->
+  <style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile Responsiveness for Header */
+  @media (max-width: 768px) {
+    .day-page-header {
+      min-height: 60vh !important;
+      margin-top: -70px !important;
+      padding-top: 100px !important;
+    }
+    
+    .day-hero {
+      padding: 1rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    .day-badge {
+      margin-bottom: 1rem !important;
+      padding: 0.3rem 0.8rem !important;
+      margin-top: 1rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.5rem !important;
+      border-radius: 20px !important;
+    }
+    
+    .day-number {
+      font-size: 0.8rem !important;
+    }
+    
+    .day-date {
+      font-size: 0.7rem !important;
+      padding-left: 0.5rem !important;
+    }
+    
+    .journey-info {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 1rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .day-page-header {
+      min-height: 50vh !important;
+      padding-top: 120px !important;
+    }
+    
+    .day-hero {
+      padding: 0.5rem !important;
+      padding-top: 1.5rem !important;
+    }
+    
+    .day-badge {
+      margin-top: 1.5rem !important;
+      padding: 0.25rem 0.6rem !important;
+      gap: 0.4rem !important;
+      border-radius: 15px !important;
+    }
+    
+    .day-number {
+      font-size: 1rem !important;
+    }
+    
+    .day-date {
+      font-size: 1rem !important;
+      padding-left: 0.4rem !important;
+    }
+    
+    .location, .weather {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+    
+    .day-title {
+      font-size: 2.2rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .day-subtitle {
+      font-size: 1.1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  /* Remove the fixed background from body for this page */
+  body {
+    background: var(--bg) !important;
+  }
+  </style>
+</body>
+</html>
+
+

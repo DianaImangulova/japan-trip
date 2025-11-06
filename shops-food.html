@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shops & Food | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🇯🇵 Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html" class="active">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+  <header class="day-page-header" style="
+    margin-top: -70px;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/japanese-food-shopping.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">
+    <div class="day-hero" style="
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      padding: 2rem;
+      z-index: 2;
+    ">
+      <div class="day-hero-content" style="
+        text-align: center;
+        background: none;
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      ">
+        
+        <h1 class="day-title" style="
+          font-size: clamp(2.5rem, 8vw, 5rem);
+          font-weight: 800;
+          margin-bottom: 0.8rem;
+          text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+          line-height: 1.1;
+          color: white;
+        ">
+        Shops & Food Guide
+        </h1>
+        
+        <p class="day-subtitle" style="
+          font-size: clamp(1.2rem, 4vw, 2rem);
+          color: rgba(255,255,255,0.95);
+          margin-bottom: 2rem;
+          font-weight: 300;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+          letter-spacing: 0.5px;
+        ">Taste Japan, Shop Like a Local</p>
+        
+        <div class="journey-info" style="
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 1.5rem;
+          font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+          margin-top: 1.5rem;
+        ">
+          <span class="location" style="
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0,0,0,0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            font-weight: 500;
+          ">🍜 Local Flavors</span>
+          <span class="weather" style="
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0,0,0,0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            font-weight: 500;
+          ">🏪 Shopping Districts</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Introduction -->
+  <main class="container">
+    <section id="shops-food-intro">
+      <h2>🍜 Japanese Food & Shopping Experience</h2>
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          Japan offers incredible <strong>culinary adventures</strong> and unique shopping experiences. From traditional markets to modern department stores, from street food to Michelin-starred restaurants - discover the best places to eat and shop during your trip.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Map Section -->
+  <div class="container">
+    <section id="food-shopping-map">
+      <h2>🗺️ Food & Shopping Map</h2>
+      
+      <div class="map-intro">
+        <p>Explore the best food and shopping locations across Tokyo. Click on the markers to learn more about each area!</p>
+      </div>
+
+      <!-- Interactive Google Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/d/u/0/embed?mid=1m7CJnxtzaPLq6k3nzkkFQfV19LpPsIY&ehbc=2E312F" 
+          width="100%" 
+          height="450" 
+          style="border:0; border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Map Legend -->
+      <div class="map-legend">
+        <h3>🎯 Key Areas on the Map</h3>
+        <div class="legend-grid">
+          <div class="legend-item">
+            <span class="legend-icon">🍜</span>
+            <div class="legend-text">
+              <strong>Food Districts</strong>
+              <p>Ramen shops, sushi bars, traditional restaurants</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-icon">🛍️</span>
+            <div class="legend-text">
+              <strong>Shopping Areas</strong>
+              <p>Department stores, fashion districts, souvenir shops</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-icon">🏪</span>
+            <div class="legend-text">
+              <strong>Markets</strong>
+              <p>Traditional markets, food halls, local vendors</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-icon">🎪</span>
+            <div class="legend-text">
+              <strong>Entertainment</strong>
+              <p>Themed cafes, entertainment districts, nightlife</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Food Categories -->
+  <div class="container">
+    <section id="food-categories">
+      <h2>🍱 Must-Try Japanese Foods</h2>
+      
+      <div class="food-grid">
+        <div class="food-card featured">
+          <div class="food-badge">Must Try</div>
+          <div class="food-image">🍜</div>
+          <h3>Ramen</h3>
+          <p class="food-description">Rich broth noodle soup with various toppings. Each region has its own style.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Shibuya, Shinjuku, local ramen shops</p>
+            <p><strong>Price:</strong> ¥800-1,500</p>
+            <p><strong>Types:</strong> Tonkotsu, Miso, Shoyu, Shio</p>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-image">🍣</div>
+          <h3>Sushi & Sashimi</h3>
+          <p class="food-description">Fresh raw fish and seasoned rice. Experience authentic sushi at its birthplace.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Tsukiji Outer Market, Ginza, conveyor belt sushi</p>
+            <p><strong>Price:</strong> ¥2,000-15,000+</p>
+            <p><strong>Tip:</strong> Try omakase (chef's choice) for the best experience</p>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-image">🍱</div>
+          <h3>Bento Boxes</h3>
+          <p class="food-description">Complete meal in a box with rice, protein, and vegetables. Perfect for travel days.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Convenience stores, train stations, department stores</p>
+            <p><strong>Price:</strong> ¥500-1,200</p>
+            <p><strong>Tip:</strong> Ekiben (station bento) are regional specialties</p>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-image">🥟</div>
+          <h3>Gyoza & Dumplings</h3>
+          <p class="food-description">Pan-fried or steamed dumplings filled with meat and vegetables.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Izakaya, gyoza specialty shops</p>
+            <p><strong>Price:</strong> ¥300-800</p>
+            <p><strong>Pair with:</strong> Beer or sake</p>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-image">🍢</div>
+          <h3>Street Food</h3>
+          <p class="food-description">Takoyaki, yakitori, taiyaki, and more. Perfect for exploring festivals and markets.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Festival stalls, Harajuku, Asakusa</p>
+            <p><strong>Price:</strong> ¥200-600 per item</p>
+            <p><strong>Must try:</strong> Takoyaki (octopus balls) in Osaka style areas</p>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-image">🍰</div>
+          <h3>Japanese Sweets</h3>
+          <p class="food-description">Traditional wagashi and modern Japanese desserts. Unique flavors like matcha and red bean.</p>
+          <div class="food-details">
+            <p><strong>Best Places:</strong> Department store basement, traditional sweet shops</p>
+            <p><strong>Price:</strong> ¥200-1,000</p>
+            <p><strong>Try:</strong> Mochi, dorayaki, matcha soft cream</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Restaurant Types -->
+  <div class="container">
+    <section id="restaurant-types">
+      <h2>🏪 Types of Dining Establishments</h2>
+      
+      <div class="restaurant-grid">
+        <div class="restaurant-card" id="izakaya-card">
+          <h3>🍻 Izakaya</h3>
+          <p><strong>What:</strong> Japanese pub with small plates and drinks</p>
+          <p><strong>Atmosphere:</strong> Casual, social, after-work gathering</p>
+          <p><strong>Food:</strong> Yakitori, karaage, edamame, various appetizers</p>
+          <p><strong>Price:</strong> ¥2,000-4,000 per person</p>
+          <div class="restaurant-tip">💡 Great for trying many different dishes and sake</div>
+        </div>
+
+        <div class="restaurant-card">
+          <h3>🍜 Ramen-ya</h3>
+          <p><strong>What:</strong> Specialized ramen noodle shops</p>
+          <p><strong>Atmosphere:</strong> Quick service, counter seating</p>
+          <p><strong>Food:</strong> Various ramen styles, gyoza, rice bowls</p>
+          <p><strong>Price:</strong> ¥800-1,500 per bowl</p>
+          <div class="restaurant-tip">💡 Often use ticket machines for ordering</div>
+        </div>
+
+        <div class="restaurant-card">
+          <h3>🍱 Teishoku</h3>
+          <p><strong>What:</strong> Set meal restaurants</p>
+          <p><strong>Atmosphere:</strong> Family-friendly, comfortable</p>
+          <p><strong>Food:</strong> Complete meals with rice, miso soup, main dish, pickles</p>
+          <p><strong>Price:</strong> ¥1,000-2,500 per set</p>
+          <div class="restaurant-tip">💡 Great value for complete, balanced meals</div>
+        </div>
+
+        <div class="restaurant-card">
+          <h3>🏪 Convenience Store</h3>
+          <p><strong>What:</strong> 24/7 stores with quality ready-made food</p>
+          <p><strong>Atmosphere:</strong> Quick grab-and-go</p>
+          <p><strong>Food:</strong> Onigiri, bento, sandwiches, hot food</p>
+          <p><strong>Price:</strong> ¥200-800 per item</p>
+          <div class="restaurant-tip">💡 Don't underestimate konbini food quality!</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Shopping Districts -->
+  <div class="container">
+    <section id="shopping-districts">
+      <h2>🛍️ Best Shopping Districts</h2>
+      
+      <div class="shopping-grid">
+        <div class="shopping-card highlight">
+          <h3>🌈 Harajuku</h3>
+          <p><strong>Vibe:</strong> Youth culture, kawaii fashion, trendy</p>
+          <div class="shopping-highlights">
+            <h4>What to Buy:</h4>
+            <ul>
+              <li>Kawaii accessories and clothing</li>
+              <li>Anime and manga merchandise</li>
+              <li>Unique Japanese fashion brands</li>
+              <li>Cosplay items</li>
+            </ul>
+            <h4>Key Streets:</h4>
+            <ul>
+              <li>Takeshita Street - teenage fashion</li>
+              <li>Omotesando - high-end boutiques</li>
+              <li>Cat Street - vintage and indie brands</li>
+            </ul>
+          </div>
+          <div class="shopping-tip">🛒 Best for unique Japanese pop culture items</div>
+        </div>
+
+        <div class="shopping-card">
+          <h3>🏙️ Shibuya</h3>
+          <p><strong>Vibe:</strong> Modern, bustling, mainstream fashion</p>
+          <div class="shopping-highlights">
+            <h4>Major Stores:</h4>
+            <ul>
+              <li>Shibuya 109 - young women's fashion</li>
+              <li>Center Gai - youth shopping street</li>
+              <li>Hachiko Exit area - department stores</li>
+            </ul>
+          </div>
+          <div class="shopping-tip">🛒 Great for mainstream Japanese fashion and accessories</div>
+        </div>
+
+        <div class="shopping-card">
+          <h3>💎 Ginza</h3>
+          <p><strong>Vibe:</strong> Luxury, upscale, sophisticated</p>
+          <div class="shopping-highlights">
+            <h4>What to Buy:</h4>
+            <ul>
+              <li>High-end Japanese brands</li>
+              <li>Traditional crafts and art</li>
+              <li>Luxury cosmetics</li>
+              <li>Fine dining experiences</li>
+            </ul>
+          </div>
+          <div class="shopping-tip">🛒 Perfect for luxury shopping and traditional Japanese crafts</div>
+        </div>
+
+        <div class="shopping-card">
+          <h3>🎮 Akihabara</h3>
+          <p><strong>Vibe:</strong> Electronics, anime, otaku culture</p>
+          <div class="shopping-highlights">
+            <h4>Specialties:</h4>
+            <ul>
+              <li>Electronics and gadgets</li>
+              <li>Anime figures and collectibles</li>
+              <li>Video games and consoles</li>
+              <li>Maid cafes and themed restaurants</li>
+            </ul>
+          </div>
+          <div class="shopping-tip">🛒 Electronics paradise and otaku culture hub</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Souvenir Guide -->
+  <div class="container">
+    <section id="souvenir-guide">
+      <h2>🎁 Perfect Japanese Souvenirs</h2>
+      
+      <div class="souvenir-categories">
+        <div class="souvenir-section">
+          <h3>🍵 Food & Drinks</h3>
+          <div class="souvenir-grid">
+            <div class="souvenir-item">
+              <h4>Matcha & Green Tea</h4>
+              <p>High-quality matcha powder, tea sets, and premium green tea from regions like Uji.</p>
+              <span class="price">¥1,000-8,000</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Japanese Snacks</h4>
+              <p>Kit-Kat flavors only available in Japan, mochi, traditional sweets, instant ramen.</p>
+              <span class="price">¥200-2,000</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Sake & Whisky</h4>
+              <p>Local sake varieties, Japanese whisky, umeshu (plum wine).</p>
+              <span class="price">¥2,000-20,000+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="souvenir-section">
+          <h3>🎨 Traditional Crafts</h3>
+          <div class="souvenir-grid">
+            <div class="souvenir-item">
+              <h4>Furoshiki Wrapping Cloths</h4>
+              <p>Beautiful traditional wrapping cloths with various patterns and uses.</p>
+              <span class="price">¥800-3,000</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Chopsticks & Tableware</h4>
+              <p>Handcrafted chopsticks, ceramic bowls, bento boxes, traditional dinnerware.</p>
+              <span class="price">¥500-5,000</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Fans & Calligraphy</h4>
+              <p>Folding fans, calligraphy sets, traditional brushes, Japanese paper.</p>
+              <span class="price">¥1,000-8,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="souvenir-section">
+          <h3>👘 Fashion & Accessories</h3>
+          <div class="souvenir-grid">
+            <div class="souvenir-item">
+              <h4>Yukata & Kimono</h4>
+              <p>Traditional Japanese clothing, from casual yukata to formal kimono.</p>
+              <span class="price">¥3,000-50,000+</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Japanese Cosmetics</h4>
+              <p>SK-II, Shiseido, unique Japanese beauty products and skincare.</p>
+              <span class="price">¥1,000-10,000</span>
+            </div>
+            <div class="souvenir-item">
+              <h4>Kawaii Accessories</h4>
+              <p>Cute character goods, Hello Kitty items, unique Japanese design accessories.</p>
+              <span class="price">¥300-3,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Shopping Tips -->
+  <div class="container">
+    <section id="shopping-tips">
+      <h2>💡 Shopping & Dining Tips</h2>
+      
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h4>💳 Payment Methods</h4>
+          <ul>
+            <li>Cash is still king in many places</li>
+            <li>IC cards work at many stores</li>
+            <li>Credit cards accepted at major stores</li>
+            <li>Mobile payment growing but not universal</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <h4>🛒 Tax-Free Shopping</h4>
+          <ul>
+            <li>Tourists can get 8-10% tax refund</li>
+            <li>Minimum purchase usually ¥5,000</li>
+            <li>Bring your passport</li>
+            <li>Look for "Tax-Free" signs</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <h4>🍽️ Dining Etiquette</h4>
+          <ul>
+            <li>Some places don't allow sharing</li>
+            <li>Don't tip (included in service)</li>
+            <li>Slurping noodles is OK</li>
+            <li>Say "itadakimasu" before eating</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <h4>🕒 Best Times</h4>
+          <ul>
+            <li>Restaurants: avoid 12-1pm and 7-8pm rush</li>
+            <li>Shopping: weekday mornings less crowded</li>
+            <li>Department stores close around 8-9pm</li>
+            <li>Convenience stores open 24/7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="hotels.html">⬅ Our Hotels</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="stories.html">Stories & Legends ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day 6 - Day in Kyoto | Japan Trip 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Mobile-Friendly Navigation -->
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Japan Trip</a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travelcard.html">Travel Card</a></li>
+        <li><a href="culture-rules.html">Culture & Rules</a></li>
+        <li><a href="hotels.html">Our Hotels</a></li>
+        <li><a href="shops-food.html">Shops & Food</a></li>
+        <li><a href="stories.html">Stories & Legends</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beautiful Page Header -->
+<header class="day-page-header" style="
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/kyoto-temples.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <div class="day-hero" style="
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 2;
+  ">
+    <div class="day-hero-content" style="
+      text-align: center;
+      background: none;
+      backdrop-filter: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    ">
+      <div class="day-badge" style="
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        background: rgba(200, 16, 46, 0.9);
+        padding: 0.4rem 1rem;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+      ">
+        <span class="day-number" style="
+          color: white;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        ">Day 6</span>
+        <span class="day-date" style="
+          color: rgba(255,255,255,0.9);
+          font-size: 1rem;
+          font-weight: 500;
+          margin-left: 0.6rem;
+          border-left: 1px solid rgba(255,255,255,0.3);
+          padding-left: 0.6rem;
+        ">November 28</span>
+      </div>
+      
+      <h1 class="day-title" style="
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        line-height: 1.1;
+        color: white;
+      ">
+      Day in Kyoto
+      </h1>
+      
+      <p class="day-subtitle" style="
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: rgba(255,255,255,0.95);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        letter-spacing: 0.5px;
+      ">Ancient Capital Highlights</p>
+      
+      <div class="journey-info" style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        margin-top: 1.5rem;
+      ">
+        <span class="location" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🚄 Shinkansen Journey</span>
+        <span class="weather" style="
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0,0,0,0.3);
+          padding: 0.6rem 1.2rem;
+          border-radius: 25px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: white;
+          font-weight: 500;
+        ">🏮 Temples & Historic Streets</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Overview Container -->
+  <main class="container">
+    <section id="day-6-overview">
+      <h2>Highlights</h2>
+      <br><br>
+      <!-- Interactive Activities Checklist -->
+        <ul class="checklist-items" style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        ">
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #3b82f6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#travel-section" style="color: #3b82f6; text-decoration: none;">Shinkansen Journey to Kyoto</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">High-speed bullet train from Tokyo to Japan's ancient capital</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #d97706;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#kiyomizu-section" style="color: #d97706; text-decoration: none;">Kiyomizu-dera Temple</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">UNESCO World Heritage temple with panoramic city views</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #dc2626;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#historic-streets-section" style="color: #dc2626; text-decoration: none;">Sannenzaka & Ninenzaka Historic Streets</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Preserved Edo-period stone-paved streets with traditional shops</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #8b5cf6;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#gion-section" style="color: #8b5cf6; text-decoration: none;">Gion District & Geisha Culture</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Famous geisha district with traditional tea houses</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#golden-pavilion-section" style="color: #f59e0b; text-decoration: none;">Kinkaku-ji (Golden Pavilion)</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Kyoto's most iconic temple covered in gold leaf</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #059669;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#bamboo-section" style="color: #059669; text-decoration: none;">Arashiyama Bamboo Grove</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Walk through thousands of towering bamboo stalks</div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="checklist-item" style="
+            background: #ffffff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 2px solid #f1f5f9;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+          " onclick="toggleChecklistItem(this)">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="checkbox" style="
+                width: 24px;
+                height: 24px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 2px;
+                transition: all 0.2s ease;
+              ">
+                <span class="checkmark" style="
+                  color: white;
+                  font-size: 14px;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.2s ease;
+                ">✓</span>
+              </div>
+              <div class="item-content">
+                <div style="
+                  font-weight: 600;
+                  color: var(--ink);
+                  font-size: 1.1rem;
+                  margin-bottom: 0.3rem;
+                "><a href="#nishiki-section" style="color: #f59e0b; text-decoration: none;">Nishiki Market Food Tour</a></div>
+                <div style="
+                  color: #6b7280;
+                  font-size: 0.95rem;
+                  line-height: 1.4;
+                ">Explore Kyoto's 400-year-old "Kitchen" market</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        <!-- Progress Bar -->
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #f1f5f9;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 600; color: var(--ink);">Progress</span>
+            <span id="progress-text" style="font-size: 0.9rem; color: #6b7280;">0 of 8 completed</span>
+          </div>
+          <div style="
+            width: 100%;
+            height: 8px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+          ">
+            <div id="progress-bar" style="
+              height: 100%;
+              width: 0%;
+              background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+              transition: width 0.3s ease;
+            "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Travel Section -->
+  <div class="container">
+    <section id="travel-section">
+      <h2>Shinkansen Journey to Kyoto</h2>
+      <br><br>
+      <img src="assets/shinkansen-mount-fuji.jpg" alt="Shinkansen with Mount Fuji" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>The Tokaido Shinkansen</strong> represents the pinnacle of Japanese engineering and efficiency. This bullet train will transport you from Tokyo to Kyoto in just 2 hours and 15 minutes, reaching speeds of up to 320 km/h while maintaining legendary punctuality.
+        </p>
+        
+        <p class="highlight-intro">
+          Your journey offers stunning views of Mount Fuji (weather permitting), rural Japanese countryside, and a glimpse into Japan's technological prowess. The smooth, quiet ride is an experience in itself - a perfect introduction to Japanese attention to detail.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🚄 Journey Details</h3>
+        <ul class="location-info">
+          <li>🚉 Route: Tokyo Station → Kyoto Station</li>
+          <li>⏱️ Duration: 2 hours 15 minutes</li>
+          <li>🎫 Train: Hikari or Kodama (covered by JR Pass)</li>
+          <li>💺 Seating: Reserved seats recommended</li>
+          <li>🗻 Views: Mount Fuji visible on right side (seats D & E)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Kiyomizu-dera Section -->
+  <div class="container">
+    <section id="kiyomizu-section">
+      <h2>Kiyomizu-dera Temple</h2>
+      <br><br>
+      <img src="assets/kiyomizu-dera-temple.jpg" alt="Kiyomizu-dera Temple" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Kiyomizu-dera</strong> is one of Kyoto's most celebrated temples, famous for its wooden stage that juts out 13 meters above the hillside. This UNESCO World Heritage site offers spectacular panoramic views over Kyoto and is a masterpiece of Japanese architecture, built without using a single nail.
+        </p>
+        
+        <p class="highlight-intro">
+          The temple's main hall represents the pinnacle of traditional Japanese carpentry. During cherry blossom season and autumn, the views are particularly stunning, but any time of year offers a profound cultural experience and unforgettable photo opportunities.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏯 Temple Highlights</h3>
+        <ul class="location-info">
+          <li>🏗️ Famous wooden stage with city views</li>
+          <li>🌸 Beautiful in all seasons</li>
+          <li>💧 Sacred Otowa Waterfall</li>
+          <li>🎫 Entry: ¥400 | Open 6:00 AM</li>
+          <li>🚌 Bus #206 to Kiyomizu-michi stop</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Historic Streets Section -->
+  <div class="container">
+    <section id="historic-streets-section">
+      <h2>Sannenzaka & Ninenzaka Historic Streets</h2>
+      <br><br>
+      <img src="assets/sannenzaka-ninenzaka-streets.jpg" alt="Historic streets with traditional buildings" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Sannenzaka and Ninenzaka</strong> are beautifully preserved stone-paved streets from the Edo period that lead down from Kiyomizu-dera. These historic pathways are lined with traditional wooden buildings housing tea shops, souvenir stores, restaurants, and craft workshops.
+        </p>
+        
+        <p class="highlight-intro">
+          Walking these streets is like stepping back in time. Legend says that falling on Sannenzaka brings three years of bad luck, while Ninenzaka brings two! The area offers perfect photo opportunities and authentic traditional shopping experiences.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🏮 Street Highlights</h3>
+        <ul class="location-info">
+          <li>🏛️ Preserved Edo-period architecture</li>
+          <li>🛍️ Traditional craft shops and souvenirs</li>
+          <li>🍵 Historic tea houses</li>
+          <li>📸 Perfect for traditional Japan photos</li>
+          <li>🚶 Free to walk, connected to Kiyomizu-dera</li>
+        </ul>
+      </div>
+
+      <!-- Interesting facts dropdown -->
+      <section class="interesting-facts" style="margin:2rem 0;">
+        <div class="facts-container" style="
+          background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+          border-radius: 16px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+          border: 1px solid #f6f3f1;
+        ">
+          <details style="border-radius: 16px;">
+            <summary style="
+              padding: 1.2rem 1.5rem;
+              cursor: pointer;
+              font-weight: 600;
+              color: #f7f3f3;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              user-select: none;
+              background: rgb(211, 111, 23);
+              border-radius: 16px;
+              margin: 4px;
+              list-style: none;
+            ">
+              <span style="display: flex; align-items: center; gap: 0.5rem;">
+                Interesting Facts About Historic Streets
+              </span>
+              <span style="font-size: 0.8rem; opacity: 0.7;">▼</span>
+            </summary>
+            
+            <div style="padding: 0 1.5rem 1.5rem; margin-top: -4px;">
+              <div class="facts-grid" style="display: grid; gap: 1.5rem; margin-top: 1rem;">
+                
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🎭 The Curse Legend</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    Local superstition claims that if you fall on <strong>Sannenzaka</strong> (Three-Year Slope), you'll die within three years, while falling on <strong>Ninenzaka</strong> (Two-Year Slope) brings death within two years. Don't worry - it's just folklore, but locals still walk carefully on these historic stone steps!
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🏛️ Architectural Time Capsule</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    These streets have remained virtually unchanged since the <strong>Edo period (1603-1868)</strong>. The traditional wooden buildings called <em>machiya</em> feature narrow frontages but extend deep into the block - a clever design to minimize property taxes that were based on street frontage width.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🎬 Hollywood's Japan</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    These atmospheric streets have appeared in countless films including <strong>"Memoirs of a Geisha"</strong>, <strong>"The Last Samurai"</strong>, and numerous Japanese period dramas. The authentic Edo-period atmosphere makes them a favorite location for filmmakers seeking traditional Japan.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🛍️ Ancient Shopping District</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    Originally developed to serve pilgrims visiting Kiyomizu-dera Temple, these streets have been a commercial district for over <strong>1,200 years</strong>. Many current shops are family businesses that have been passed down through 10+ generations of the same family.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🏮 Stone Lantern Mystery</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    The traditional stone lanterns lining the streets are called <em>chōchin</em>. Each one is individually crafted and still lit by hand every evening. Some of these lanterns date back over 400 years and have survived multiple wars, earthquakes, and natural disasters.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">👘 Geisha's Secret Path</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    These streets serve as a discreet route for geiko and maiko traveling between the Gion district and various tea houses throughout the city. Early morning (before 8 AM) and late evening (after 6 PM) offer the best chances to spot them gracefully navigating the historic stone steps.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🌸 Seasonal Transformations</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    During cherry blossom season, the streets become tunnels of pink petals falling like snow. In autumn, maple leaves create a natural red carpet effect. Each season brings different traditional decorations, seasonal foods, and festival celebrations to the historic shops.
+                  </p>
+                </div>
+
+                <div class="fact-item" style="
+                  background: white;
+                  padding: 1.2rem;
+                  border-radius: 12px;
+                  border-left: 3px solid #dc2626;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                ">
+                  <h4 style="color: #dc2626; margin: 0 0 0.5rem; font-size: 1rem;">🔧 Preservation Perfection</h4>
+                  <p style="margin: 0; color: #374151; line-height: 1.6; font-size: 0.95rem;">
+                    These streets are designated as <strong>Important Preservation Districts for Groups of Traditional Buildings</strong>. Every renovation must use traditional materials and techniques. Even modern conveniences like electricity, plumbing, and internet cables are carefully hidden to maintain the historical appearance.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Gion Section -->
+  <div class="container">
+    <section id="gion-section">
+      <h2>Gion District & Geisha Culture</h2>
+      <br><br>
+      <img src="assets/gion-district-geisha.jpg" alt="Gion district traditional architecture" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Gion</strong> is Kyoto's most famous geisha district, where traditional culture thrives in an atmosphere of refined elegance. Walk along Hanami-koji street to see traditional machiya (wooden townhouses) that house exclusive tea houses and restaurants.
+        </p>
+        
+        <p class="highlight-intro">
+          If you're lucky, you might spot geiko (Kyoto's term for geisha) or maiko (apprentice geiko) making their way to appointments. The district comes alive in the evening when the lanterns are lit and the tea houses open their doors.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>👘 Gion Highlights</h3>
+        <ul class="location-info">
+          <li>🏮 Hanami-koji street exploration</li>
+          <li>👘 Possible geiko/maiko sightings</li>
+          <li>🍱 Traditional kaiseki dining</li>
+          <li>🏛️ Historic tea houses and ochaya</li>
+          <li>🌃 Beautiful evening atmosphere</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Golden Pavilion Section -->
+  <div class="container">
+    <section id="golden-pavilion-section">
+      <h2>Kinkaku-ji (Golden Pavilion)</h2>
+      <br><br>
+      <img src="assets/kinkaku-ji-golden-pavilion.jpg" alt="Golden Pavilion reflected in pond" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Kinkaku-ji</strong>, the Golden Pavilion, is arguably Kyoto's most iconic sight. This three-story Zen temple is completely covered in gold leaf and reflects beautifully in the surrounding pond. Originally built as a retirement villa for a shogun, it represents the pinnacle of Japanese aesthetic harmony.
+        </p>
+        
+        <p class="highlight-intro">
+          The temple's golden reflection creates one of Japan's most photographed scenes. The surrounding gardens change with the seasons, offering different but equally stunning backdrops throughout the year.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>✨ Golden Pavilion Highlights</h3>
+        <ul class="location-info">
+          <li>🏯 Three-story temple covered in gold leaf</li>
+          <li>🌊 Perfect reflection in mirror pond</li>
+          <li>🌸 Beautiful seasonal garden views</li>
+          <li>🎫 Entry: ¥400 | Open 8:30 AM</li>
+          <li>🚌 Bus #12 or #59 to Kinkaku-ji-mae</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bamboo Grove Section -->
+  <div class="container">
+    <section id="bamboo-section">
+      <h2>Arashiyama Bamboo Grove</h2>
+      <br><br>
+      <img src="assets/arashiyama-bamboo-grove.jpg" alt="Bamboo forest pathway" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>The Arashiyama Bamboo Grove</strong> offers one of Japan's most magical natural experiences. Walk through thousands of towering bamboo stalks that create a natural green tunnel, filtering sunlight into an ethereal glow.
+        </p>
+        
+        <p class="highlight-intro">
+          The wind rustling through the bamboo creates a unique soundscape that has been designated as one of Japan's "100 Soundscapes." This natural symphony, combined with the visual beauty, makes for an unforgettable sensory experience.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🎋 Bamboo Grove Highlights</h3>
+        <ul class="location-info">
+          <li>🌿 Thousands of towering bamboo stalks</li>
+          <li>🎵 Unique "soundscape of Japan"</li>
+          <li>📸 Ethereal photo opportunities</li>
+          <li>🚃 Keifuku Railway to Arashiyama</li>
+          <li>🆓 Free access, best in late afternoon</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Nishiki Market Section -->
+  <div class="container">
+    <section id="nishiki-section">
+      <h2>Nishiki Market Food Tour</h2>
+      <br><br>
+      <img src="assets/nishiki-market.jpg" alt="Nishiki Market food stalls" style="max-width:100%; border-radius:12px; margin-bottom:1.5rem;">
+      
+      <div class="intro-text">
+        <p class="highlight-intro">
+          <strong>Nishiki Market</strong>, known as "Kyoto's Kitchen," is a 400-year-old market stretching for five blocks through downtown Kyoto. This narrow, covered walkway is lined with over 100 specialty shops and restaurants selling everything from fresh tofu to pickled vegetables.
+        </p>
+        
+        <p class="highlight-intro">
+          This is the perfect introduction to Kyoto's culinary culture. Sample local specialties like yuba (tofu skin), matcha sweets, fresh mochi, and Kyoto's famous kaiseki ingredients. It's a feast for all the senses and a great way to experience local food culture.
+        </p>
+      </div>
+
+      <div class="location-details">
+        <h3>🍜 Market Highlights</h3>
+        <ul class="location-info">
+          <li>🥢 Tofu specialties and fresh yuba</li>
+          <li>🍡 Traditional sweets and matcha treats</li>
+          <li>🥒 Kyoto pickles (tsukemono)</li>
+          <li>🍶 Sake tasting at specialty shops</li>
+          <li>🍳 Fresh-made tamagoyaki (egg rolls)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Day tips -->
+  <div class="container">
+    <section id="day-map">
+      <h2>Day Tips</h2>
+          <li>Start early with Shinkansen departure at 6:00 AM</li>
+          <li>Book Shinkansen seats D & E for Mount Fuji views</li>
+          <li>Buy Kyoto City Bus Day Pass (¥600) at station</li>
+          <li>Visit Golden Pavilion early to avoid crowds</li>
+          <li>Comfortable walking shoes for temple steps</li>
+          <li>Nishiki Market best visited before 5 PM</li>
+          <li>Respect photography rules in Gion district</li>
+          <li>Try ekiben (train bento) during Shinkansen journey</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Navigation Links -->
+  <div class="container">
+    <table style="width:100%; margin-top:1.5rem;">
+      <tr>
+        <td style="text-align:left;">
+          <a href="day5.html">⬅ Back to Day 5</a>
+        </td>
+        <td style="text-align:center;">
+          <a href="index.html">Itinerary Overview</a>
+        </td>
+        <td style="text-align:right;">
+          <a href="day7.html">Day 7 ➡</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    Made with ❤️ for our Japan adventure.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Interactive Checklist Functionality
+    function toggleChecklistItem(item) {
+      const checkbox = item.querySelector('.checkbox');
+      const checkmark = item.querySelector('.checkmark');
+      const isChecked = item.classList.contains('checked');
+      
+      if (isChecked) {
+        item.classList.remove('checked');
+        checkbox.style.backgroundColor = 'transparent';
+        checkmark.style.opacity = '0';
+        item.style.borderColor = '#f1f5f9';
+        item.style.backgroundColor = '#ffffff';
+      } else {
+        item.classList.add('checked');
+        const borderColor = window.getComputedStyle(checkbox).borderColor;
+        checkbox.style.backgroundColor = borderColor;
+        checkmark.style.opacity = '1';
+        item.style.borderColor = borderColor;
+        item.style.backgroundColor = '#f8f9fa';
+      }
+      
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const items = document.querySelectorAll('.checklist-item');
+      const checkedItems = document.querySelectorAll('.checklist-item.checked');
+      const progress = (checkedItems.length / items.length) * 100;
+      
+      document.getElementById('progress-bar').style.width = progress + '%';
+      document.getElementById('progress-text').textContent = `${checkedItems.length} of ${items.length} completed`;
+    }
+  </script>
+
+</body>
+</html>
