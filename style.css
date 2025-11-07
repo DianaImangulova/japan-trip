@@ -17,6 +17,8 @@
 
 html, body { 
   height: 100%; 
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -25,392 +27,7 @@ body {
   color: var(--ink);
   line-height: 1.7;
   font-size: 16px;
-  padding-top: 70px; /* Account for fixed navigation */
-}
-
-/* Japanese-style Header */
-.site-header {
-  position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 50%, #1a1a1a 100%);
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.4;
-  z-index: 1;
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 2rem;
-  background: rgba(45, 24, 16, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 2px solid var(--gold);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-}
-
-.hero-text h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(45deg, var(--gold), #fff, var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.dates {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  color: #f0f0f0;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-/* Main Container */
-.container {
-  max-width: 1200px;
-  margin: 3rem auto;
-  background: var(--card);
-  border-radius: 24px;
-  padding: 2.5rem;
-  box-shadow: 
-    0 20px 60px -20px rgba(0,0,0,0.1),
-    0 2px 8px rgba(0,0,0,0.05);
-  position: relative;
-  width: 90%; /* Prevent containers from being too wide */
-}
-
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--gold), var(--forest));
-  border-radius: 24px 24px 0 0;
-}
-
-.container::after {
-  content: '🍂';
-  position: absolute;
-  top: -20px;
-  right: 20px;
-  font-size: 2rem;
-  animation: fallLeaf 8s infinite linear;
-  animation-delay: 2s;
-}
-
-/* Day Page Header */
-.day-page-header {
-  margin-top: -70px; /* Offset the body padding for full-width header */
-  position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 50%, #1a1a1a 100%);
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.day-hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.day-hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 2rem;
-  background: rgba(45, 24, 16, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 2px solid var(--gold);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-}
-
-.day-badge {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.day-number {
-  background: var(--accent);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.day-date {
-  color: #f0f0f0;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-
-.day-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.day-subtitle {
-  font-size: 1.2rem;
-  color: #f0f0f0;
-  margin-bottom: 1.5rem;
-}
-
-.journey-info {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 0.9rem;
-  color: #f0f0f0;
-}
-
-.location, .weather {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.weather {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.3rem 0.6rem;
-  border-radius: 12px;
-}
-
-/* Floating Elements */
-.day-hero-decoration {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
-
-.floating-element {
-  font-size: 2rem;
-  animation: float 6s ease-in-out infinite;
-}
-
-.floating-element:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.floating-element:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.floating-element:nth-child(3) {
-  animation-delay: 4s;
-}
-
-/* Main Title */
-#itinerary h2 {
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  color: var(--ink);
-  text-align: center;
-  margin-bottom: 3rem;
-  font-weight: 800;
-  position: relative;
-}
-
-#itinerary h2::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: var(--accent);
-  margin: 1rem auto;
-  border-radius: 2px;
-}
-
-/* Week Sections */
-.week-section {
-  margin: 4rem 0;
-}
-
-.week-section h3 {
-  color: var(--accent);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 2rem;
-  font-weight: 700;
-  position: relative;
-  padding-left: 2rem;
-}
-
-.week-section h3::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--accent), var(--gold));
-  border-radius: 3px;
-}
-
-/* Itinerary Grid */
-.itinerary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-/* Day Cards */
-.day-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 
-    0 8px 25px rgba(0,0,0,0.08),
-    0 2px 6px rgba(0,0,0,0.04);
-  border-left: 5px solid var(--accent);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.day-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, var(--accent), var(--gold));
-  opacity: 0.05;
-  border-radius: 0 16px 0 60px;
-}
-
-.day-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 
-    0 20px 40px rgba(0,0,0,0.12),
-    0 8px 16px rgba(0,0,0,0.08);
-  border-left-color: var(--gold);
-}
-
-.day-card.departure {
-  border-left-color: var(--forest);
-  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
-}
-
-.day-card.departure::before {
-  background: linear-gradient(135deg, var(--forest), var(--gold));
-}
-
-.day-card.departure li::before {
-  content: '✈️';
-}
-
-/* Day Header */
-.day-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--accent);
-}
-
-/* Day Card Content */
-.day-card h4 {
-  margin: 0 0 1.2rem;
-  color: var(--ink);
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.day-card ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.day-card li {
-  margin-bottom: 0.8rem;
-  padding-left: 1.5rem;
-  color: #4a5568;
-  position: relative;
-  line-height: 1.6;
-}
-
-.day-card li::before {
-  content: '🌸';
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 0.9rem;
-}
-
-/* Day Activities List */
-.day-activities {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-}
-
-.day-activities li {
-  padding: 0.1rem 0;
-  line-height: 1.6;
-}
-
-/* Links */
-.day-card a, .day-activities a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.day-card a:hover, .day-activities a:hover {
-  border-bottom-color: var(--accent);
-  color: #a91b2e;
+  padding-top: 70px;
 }
 
 /* Mobile Navigation Menu */
@@ -441,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-/* Desktop Menu (Default) */
+/* Desktop Menu */
 .nav-menu {
   display: flex;
   list-style: none;
@@ -526,121 +143,1217 @@ body {
 .nav-menu li:nth-child(5) a::before { content: '🛍️'; }
 .nav-menu li:nth-child(6) a::before { content: '📖'; }
 
-/* MOBILE STYLES */
+/* Day Page Header */
+.day-page-header {
+  margin-top: -70px;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 50%, #1a1a1a 100%);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.day-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(45, 24, 16, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.day-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  background: rgba(196, 16, 46, 0.9);
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.day-number {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.day-date {
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 0.6rem;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 0.6rem;
+}
+
+.day-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+  line-height: 1.1;
+  color: white;
+}
+
+.day-subtitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  letter-spacing: 0.5px;
+}
+
+.journey-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  margin-top: 1.5rem;
+}
+
+.location, .weather {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0,0,0,0.3);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-weight: 500;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 
+    0 20px 60px -20px rgba(0,0,0,0.1),
+    0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+  width: 90%;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--gold), var(--forest));
+  border-radius: 24px 24px 0 0;
+}
+
+/* Main Title */
+h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+/* Week Sections */
+.week-section {
+  margin: 4rem 0;
+}
+
+.week-section h3 {
+  color: var(--accent);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.week-section h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent), var(--gold));
+  border-radius: 3px;
+}
+
+/* FIXED ITINERARY GRID - NARROW CARDS */
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns on desktop */
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 100%; /* Ensures cards don't exceed container */
+}
+
+/* Day Cards - CONSTRAINED WIDTH */
+.day-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 
+    0 8px 25px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.04);
+  border-left: 5px solid var(--accent);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Take full column width */
+  max-width: 100%; /* Never exceed column space */
+}
+
+.day-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  opacity: 0.05;
+  border-radius: 0 16px 0 60px;
+}
+
+.day-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.12),
+    0 8px 16px rgba(0,0,0,0.08);
+  border-left-color: var(--gold);
+}
+
+.day-card.departure {
+  border-left-color: var(--forest);
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.day-card.departure::before {
+  background: linear-gradient(135deg, var(--forest), var(--gold));
+}
+
+.day-card.departure li::before {
+  content: '✈️';
+}
+
+/* Day Header */
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.date {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #f3f4f6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+}
+
+/* Day Card Content */
+.day-card h4 {
+  margin: 0 0 1.2rem;
+  color: var(--ink);
+  font-size: 1.2rem; /* Slightly smaller for narrow cards */
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.day-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.day-card li {
+  margin-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  color: #4a5568;
+  position: relative;
+  line-height: 1.6;
+  font-size: 0.95rem; /* Slightly smaller text */
+}
+
+.day-card li::before {
+  content: '🌸';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.9rem;
+}
+
+/* Links */
+.day-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.day-card a:hover {
+  border-bottom-color: var(--accent);
+  color: #a91b2e;
+}
+
+/* Tips Section */
+.tips-section {
+  margin: 4rem 0;
+}
+
+.tips-section h3 {
+  color: var(--forest);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--forest);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-top: 4px solid var(--forest);
+  transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.tip-card h4 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tip-card p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Stories & Legends Page Styles */
+.intro-text {
+  margin: 2rem 0;
+}
+
+.highlight-intro {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f5f0 0%, #ffffff 100%);
+  border-radius: 12px;
+  border-left: 4px solid var(--gold);
+}
+
+/* All other grids - maintain current responsive behavior */
+.deities-grid,
+.creatures-grid,
+.legends-grid,
+.places-grid,
+.festivals-grid,
+.analysis-grid,
+.etiquette-grid,
+.phrases-grid,
+.concepts-grid,
+.steps-grid,
+.card-types-grid,
+.journey-breakdown,
+.purchase-methods,
+.reference-grid,
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Do's and Don'ts Section - Special 2 column layout */
+.dos-donts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* All card styles remain the same */
+.deity-card,
+.creature-category,
+.legend-card,
+.place-card,
+.festival-card,
+.analysis-card,
+.etiquette-card,
+.dos-section,
+.donts-section,
+.phrase-category,
+.concept-card,
+.step-card,
+.card-type,
+.trip-card,
+.method-card,
+.reference-card,
+.location-item {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 
+    0 8px 25px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add all the existing card-specific styles here */
+.deity-card {
+  border-left: 4px solid var(--accent);
+}
+
+.deity-card.featured {
+  border-left-color: var(--gold);
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+}
+
+.creature-category,
+.place-card {
+  border-left: 4px solid var(--forest);
+}
+
+.legend-card,
+.etiquette-card,
+.phrase-category,
+.step-card,
+.method-card {
+  border-left: 4px solid var(--accent);
+}
+
+.card-type {
+  border-left: 4px solid var(--forest);
+}
+
+.card-type.featured {
+  border-left-color: var(--gold);
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+}
+
+.trip-card {
+  border-left: 4px solid var(--forest);
+}
+
+.trip-card.featured {
+  border-left-color: var(--gold);
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+}
+
+.festival-card,
+.reference-card {
+  border-top: 4px solid var(--accent);
+}
+
+.analysis-card,
+.tip-card {
+  border-top: 4px solid var(--forest);
+}
+
+/* Do's and Don'ts specific styling */
+.dos-section {
+  border-left: 4px solid var(--forest);
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.donts-section {
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+}
+
+/* Special components */
+.purchase-info {
+  background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+  border: 2px var(--gold) solid;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.recommendation-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  border: 2px var(--forest) solid;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.main-choice {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Site Footer */
+.site-footer {
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Navigation Links Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+table a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+table a:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(196, 16, 46, 0.3);
+}
+
+/* MOBILE RESPONSIVE STYLES */
 @media (max-width: 768px) {
-  /* Show hamburger button on mobile */
+  /* Show mobile menu button */
   .menu-toggle {
-    display: flex !important;
+    display: flex;
   }
   
-  /* Hide menu by default on mobile */
+  /* Mobile menu styles */
   .nav-menu {
-    position: fixed;
-    top: 70px;
+    display: none;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: rgba(45, 24, 16, 0.98);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 1rem 0;
     gap: 0;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    z-index: 999;
   }
   
-  /* Show menu when active */
   .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+    display: flex;
   }
   
   .nav-menu li {
-    padding: 0 2rem;
-    opacity: 0;
-    transform: translateY(-20px);
+    width: 100%;
   }
-  
-  .nav-menu.active li {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.3s ease;
-  }
-  
-  .nav-menu.active li:nth-child(1) { transition-delay: 0.1s; }
-  .nav-menu.active li:nth-child(2) { transition-delay: 0.2s; }
-  .nav-menu.active li:nth-child(3) { transition-delay: 0.3s; }
-  .nav-menu.active li:nth-child(4) { transition-delay: 0.4s; }
-  .nav-menu.active li:nth-child(5) { transition-delay: 0.5s; }
-  .nav-menu.active li:nth-child(6) { transition-delay: 0.6s; }
   
   .nav-menu li a {
     display: block;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 0.5rem 0;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
   
   .nav-menu li a:hover {
     background: var(--accent);
-    transform: translateX(10px);
+    transform: none;
+    padding-left: 2rem;
+  }
+  
+  /* Mobile fixes */
+  body {
+    padding-top: 60px;
+  }
+  
+  .container {
+    width: calc(100% - 2rem) !important;
+    max-width: calc(100vw - 2rem) !important;
+    margin: 1rem auto !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* CONTAINER FIX FOR MOBILE - Add this inside the existing @media (max-width: 768px) */
+  .container {
+    width: calc(100% - 2rem) !important;
+    max-width: calc(100vw - 2rem) !important;
+    margin: 1rem auto !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Ensure itinerary grid doesn't overflow */
+  .itinerary-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    margin: 1rem 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Force day cards to stay within bounds */
+  .day-card {
+    padding: 1.2rem !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix for journey info section */
+  .journey-info {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+    align-items: center !important;
+    margin: 1rem 0 !important;
+  }
+  
+  .location {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    text-align: center !important;
+    width: auto !important;
+    max-width: 90% !important;
+  }
+  
+  /* MOBILE - SINGLE COLUMN FOR DAY CARDS */
+  .itinerary-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .day-card {
+    padding: 1.5rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .day-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .day-card li {
+    font-size: 0.9rem;
+  }
+  
+  /* Header responsive */
+  .day-page-header {
+    margin-top: -60px;
+    min-height: 50vh;
+  }
+  
+  .day-hero {
+    padding: 1rem;
+  }
+  
+  .day-hero-content {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+  /* All other grids single column on mobile */
+  .deities-grid,
+  .creatures-grid,
+  .legends-grid,
+  .places-grid,
+  .festivals-grid,
+  .analysis-grid,
+  .etiquette-grid,
+  .dos-donts-grid,
+  .phrases-grid,
+  .concepts-grid,
+  .steps-grid,
+  .card-types-grid,
+  .journey-breakdown,
+  .purchase-methods,
+  .reference-grid,
+  .locations-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Mobile card padding */
+  .deity-card,
+  .creature-category,
+  .legend-card,
+  .place-card,
+  .festival-card,
+  .analysis-card,
+  .etiquette-card,
+  .dos-section,
+  .donts-section,
+  .phrase-category,
+  .concept-card,
+  .step-card,
+  .card-type,
+  .trip-card,
+  .method-card,
+  .reference-card,
+  .location-item,
+  .tip-card {
+    padding: 1.2rem;
+  }
+  
+  /* Section headings mobile */
+  h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
+  }
+  
+  .week-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-left: 0.8rem;
   }
 }
 
-/* DESKTOP STYLES */
-@media (min-width: 769px) {
-  /* Force hide hamburger on desktop */
-  .menu-toggle {
-    display: none !important;
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .container {
+    padding: 0.8rem;
+    margin: 0.8rem auto;
   }
   
-  /* Ensure menu shows normally on desktop */
-  .nav-menu {
-    position: static !important;
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    flex-direction: row !important;
-    background: none !important;
-    box-shadow: none !important;
+  .day-card {
+    padding: 1rem;
+  }
+  
+  .day-card h4 {
+    font-size: 1rem;
+  }
+  
+  .day-card li {
+    font-size: 0.85rem;
+  }
+  
+  /* All cards smaller padding */
+  .deity-card,
+  .creature-category,
+  .legend-card,
+  .place-card,
+  .festival-card,
+  .analysis-card,
+  .etiquette-card,
+  .dos-section,
+  .donts-section,
+  .phrase-category,
+  .concept-card,
+  .step-card,
+  .card-type,
+  .trip-card,
+  .method-card,
+  .reference-card,
+  .location-item,
+  .tip-card {
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .week-section h3 {
+    font-size: 1.1rem;
+  }
+}
+// Add this at the end of your CSS file (around line 800):
+
+/* SHOPS & FOOD PAGE - MISSING STYLES */
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+.map-intro {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+/* Map Legend */
+.map-legend {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.map-legend h3 {
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.legend-icon {
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+}
+
+.legend-text strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.legend-text p {
+  color: #6b7280;
+  margin: 0.3rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+/* Food Grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.food-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--accent);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.food-card.featured {
+  border-left-color: var(--gold);
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.food-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--gold);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.food-image {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.food-card h3 {
+  color: var(--ink);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.food-description {
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.food-details {
+  background: rgba(0,0,0,0.02);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+.food-details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+/* Restaurant Grid */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--forest);
+  transition: all 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.restaurant-card h3 {
+  color: var(--ink);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.restaurant-card p {
+  color: #4a5568;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.restaurant-tip {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--ink);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-left: 3px solid var(--gold);
+}
+
+/* Shopping Grid */
+.shopping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.shopping-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.shopping-card.highlight {
+  border-left-color: var(--gold);
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+}
+
+.shopping-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.shopping-card h3 {
+  color: var(--ink);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.shopping-card > p {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.shopping-highlights h4 {
+  color: var(--accent);
+  font-size: 1rem;
+  margin: 1.2rem 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.shopping-highlights ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.shopping-highlights li {
+  color: #4a5568;
+  margin: 0.3rem 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.shopping-tip {
+  background: rgba(38, 70, 83, 0.1);
+  color: var(--ink);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-left: 3px solid var(--forest);
+}
+
+/* Souvenir Categories */
+.souvenir-categories {
+  margin: 2rem 0;
+}
+
+.souvenir-section {
+  margin: 3rem 0;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.souvenir-section h3 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.souvenir-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.souvenir-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.souvenir-item:hover {
+  background: #f0f9ff;
+  transform: translateY(-2px);
+}
+
+.souvenir-item h4 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.souvenir-item p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.price {
+  background: var(--accent);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* MOBILE RESPONSIVE FIXES FOR SHOPS & FOOD */
+@media (max-width: 768px) {
+  /* Header fixes */
+  .day-hero {
+    padding: 1rem !important;
+  }
+  
+  .day-hero-content {
     padding: 0 !important;
-    gap: 2rem !important;
-  }
-  
-  .nav-menu li {
-    opacity: 1 !important;
-    transform: none !important;
-    padding: 0 !important;
-  }
-  
-  .nav-menu li a {
     margin: 0 !important;
     background: none !important;
     border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Map container mobile */
+  .map-container {
+    height: 300px;
+    margin: 1.5rem 0;
+  }
+  
+  /* All grids single column */
+  .food-grid,
+  .restaurant-grid,
+  .shopping-grid,
+  .legend-grid,
+  .souvenir-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Card padding adjustments */
+  .food-card,
+  .restaurant-card,
+  .shopping-card,
+  .souvenir-section {
+    padding: 1.2rem !important;
+  }
+  
+  .souvenir-item {
+    padding: 1rem !important;
+  }
+  
+  /* Text size adjustments */
+  .food-card h3,
+  .restaurant-card h3,
+  .shopping-card h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .food-image {
+    font-size: 2.5rem !important;
+  }
+  
+  .legend-item {
+    padding: 0.8rem !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  
+  .legend-icon {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Journey info mobile fix */
+  .journey-info {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
   }
 }
 
-/* Animations */
-@keyframes fallLeaf {
-  0% {
-    transform: rotate(0deg) translateY(0px);
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .map-container {
+    height: 250px !important;
   }
-  100% {
-    transform: rotate(360deg) translateY(100vh);
+  
+  .food-card,
+  .restaurant-card,
+  .shopping-card,
+  .souvenir-section {
+    padding: 1rem !important;
   }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+  
+  .food-card h3,
+  .restaurant-card h3,
+  .shopping-card h3 {
+    font-size: 1rem !important;
   }
-  50% {
-    transform: translateY(-20px);
+  
+  .food-image {
+    font-size: 2rem !important;
+  }
+  
+  .shopping-highlights ul {
+    margin-left: 1rem !important;
+  }
+  
+  .souvenir-section h3 {
+    font-size: 1.2rem !important;
   }
 }
